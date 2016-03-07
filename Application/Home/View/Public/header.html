@@ -1,0 +1,58 @@
+<header id="tophead">
+	<h1>讨论区</h1>
+	<nav id="top-nav">
+		<ul id="top-nav-ul">
+			<li><a href="__APP__/Home/Index/index">大厅</a></li>
+			<li><a href="__APP__/Home/Index/forum">部落</a></li>
+			<li><a href="javascript:history.go(-1);">返回</a></li>
+			<li class="li-state douser"><a href="{$nav.url}" class="douser">{$nav.state} {$nav.i}</a>
+				<div id="loged"> 
+					<span class="org_bot_cor"></span>
+					<span class="emem"></span>
+					<ul>
+						<li><a href="__APP__/Home/Person/person">个人中心</a></li>
+						<li><a href="">系统通知</a></li>
+						<li><a href="../Login/do_logout">退出登陆</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<button class="nav-button">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+	<script>
+		$(function(){
+			$(".douser").click(function(){
+				if("{$nav.state}"!="登陆"){
+					if($("#loged").is(':hidden')){
+						$("#loged").show();
+					}else{
+						$("#loged").hide();
+					}
+				}
+			});
+			$(document).not($('.douser')).click(function(){
+				if($("#loged").is(':visible')){
+					$("#loged").hide();
+				}
+				// alert("sadsa");
+			});
+			$('.douser').on("click", function(e) {
+			    e.stopPropagation();
+			});
+			$(".nav-button").click(function(){
+				if($("#top-nav").is(":hidden")){
+					$(".nav-button").css("background","lightblue");
+					$("#top-nav").slideDown("slow");
+				}else{
+					$("#top-nav").slideUp();
+					$(".nav-button").css("background","#eee");
+				}
+				
+			})
+		})
+	</script>
+</header>

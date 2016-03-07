@@ -1,0 +1,57 @@
+<!-- 项目开始日期：2016-02-26  -->
+<!-- 作者：黄一凡              -->
+<!-- 版本：1.0                 -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>讨论区</title>
+	<link rel="stylesheet" href="__PUBLIC__/front/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/css/login.css">
+	<script src="__PUBLIC__/front/js/jquery.min.js"></script>
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- 头部导航栏 -->
+		<include file="./Application/Home/View/Public/header.html" />
+		<!-- 中间内容区 -->
+		<div id="login">
+			<section id="login-form">
+				<form action="__URL__/dologin" method="post">
+					<h1>登录</h1>
+					<p id="tips"></p><!-- 提示错误信息 -->
+					<span><input type="text" name="username" id="username" placeholder="用户名/邮箱" /></span>
+					<span><input type="password" name="password" id="password" placeholder="密码" /></span>
+					<i><input type="checkbox"> 记住账号<a href="">忘记密码？</a></i>
+					<!-- <i></i> -->
+					<span>
+						<a href="javascript:login()">登录</a>
+						<a href="__URL__/register">注册</a>
+					</span>
+				</form>
+			</section>
+		</div>
+		<div id="introduction">
+			讨论区简介
+		</div>
+		<!-- 尾部 -->
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+<script>
+	function login(){
+		$.post('__URL__/dologin', {
+			username:$("#username").val(),
+			password:$("#password").val()
+		},function(text){
+			if(text=="pass"){
+				window.location.href="__APP__/Home/Index/index";
+			}else{
+				$("#tips").html(text);
+			}
+		});
+	}
+</script>
+</body>
+</html>

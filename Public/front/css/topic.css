@@ -1,0 +1,222 @@
+/*topic页面css代码*/
+.topic-page{
+	min-height:200px;
+	border-bottom:0px;
+}
+.topic-page header.topic-header{
+	min-height:105px;
+	border-bottom:1px solid #ccc;
+}
+.topic-page header.topic-header h1{
+	color:#333;
+	line-height:50px;
+	min-height:50px;
+	font-size:1.6em;
+	font-weight:400;
+	font-style:normal;
+	display:inline-block;
+	margin-top:10px;
+	width:80%;
+}
+.content-topic:hover{
+	background:#F1FAFA;
+}
+.topic-page header.topic-header div.about-title{
+	height:30px;
+	line-height:30px;
+	margin-top:0px;
+	display:inline-block;
+	width:70%;
+}
+
+header.topic-header div.about-title{
+	height:20px;
+	line-height:20px;
+	margin-top:0px;
+}
+header.topic-header div.about-title span{
+	font-size:0.8em;
+	margin-left:0.6em;
+	margin-right:0.6em;
+	color:#666;
+	font-weight:300;
+	float:left;
+}
+section.real-content{
+	/*min-height:100px;*/
+	/*background:red;*/
+	width:100%;
+	/*overflow:hidden;*/
+	padding-top:10px;
+	padding-bottom:15px;
+	display:block;
+	float:left;
+}
+section.real-content pre{
+	line-height:30px;
+	font-weight:normal;
+	font-size:1em;
+	width:98%;
+	margin-left:1%;
+	word-spacing:nowrap;
+	color:#444;
+	text-indent:1.8em;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	display:block;
+}
+
+/*评论区*/
+section.talk-area{
+	width:75%;
+	min-height:130px;
+	margin-top:30px;
+	display:block;
+	float:left;
+	border-radius:5px;
+	box-shadow:0px 0px 2px #aaa;
+	border-radius:5px;
+	background:#F1FAFA;
+	background:#F1FAFA;
+}
+section.talk-area header button{
+	float:right;
+	font-size:0.8em;
+	letter-spacing:1px;
+	width:70px;
+	height:20px;
+	margin-top:5px;
+	margin-right:15px;
+	background:lightblue;
+	color:#666;
+	border:1px solid #ccc;
+}
+section.talk-area header button:hover{
+	box-shadow:0px 0px 2px blue;
+	text-shadow:0px 0px 1px #999;
+	cursor:pointer;
+}
+section.talk-area form{
+	height:100%;
+}
+section.talk-area form textarea{
+	min-height:91px;
+	margin-left:0.2%;
+	width:99%;
+	border-radius:5px;
+	border:0px;
+	border:1px solid #ccc;
+	/*text-indent:5px;*/
+	text-align:left;
+	padding:2px;
+	float:left;
+	background:#f8f8f8;
+	resize: none;	
+}
+
+
+/*回复区*/
+section.response-area{
+	width:75%;
+	min-height:100px;
+	margin-top:30px;
+	display:block;
+	float:left;
+	border-radius:5px;
+	box-shadow:0px 0px 2px #aaa;
+	border-radius:5px;
+	background:#F1FAFA;
+
+}
+header.content-header{
+	text-indent:10px;
+	line-height:30px;
+	color:#888;
+}
+article.response{
+	min-height:90px;
+	width:100%;
+	float:left;
+	border-bottom:1px solid rgba(60,120,190,0.25);
+}
+article.response img.response-img{
+	/*height:60px;
+	width:60px;*/
+	width:7%;
+	margin-left:1%;
+	margin-top:8px;
+	margin-right:1%;
+	display:block;
+	float:left;
+}
+section.response-content{
+	min-height:70px;
+	width:90%;
+	display:block;
+	float:left;
+}
+div.about-response{
+	width:100%;
+	display:block;
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+div.about-response span{
+	color:#777;
+	font-size:0.9em;
+}
+div.real-response-content{
+	display:block;
+	width:100%;
+	min-height:30px;
+	/*background:red;*/
+	margin-bottom:10px;
+	color:#555;
+	font-weight:300;
+
+}
+
+
+
+@media screen and (max-width:600px){
+	.topic-page header.topic-header h1{
+		line-height:30px;
+		min-height:50px;
+		font-size:1.4em;
+		font-weight:400;
+		font-style:normal;
+		margin-top:10px;
+		width:79%;
+		/*float:left;*/
+	}
+	section.talk-area{
+		width:100%;
+		margin-left:0%;
+		margin-top:15px;
+	}
+	section.talk-area form textarea{
+		min-height:91px;
+		margin-left:0.2%;
+		width:97.7%;
+	}
+	section.response-area{
+		width:100%;
+	}
+	section.talk-area header{
+		height:40px;
+		line-height:40px;
+		font-size:1.2em;
+	}
+	section.talk-area header button{
+		font-size:0.7em;
+		width:66px;
+		height:30px;
+		margin-top:5px;
+		margin-right:15px;
+		box-shadow:0px 0px 1px #999;
+	}
+}

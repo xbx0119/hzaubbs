@@ -1,0 +1,83 @@
+<!-- 项目开始日期：2016-02-26  -->
+<!-- 作者：黄一凡              -->
+<!-- 版本：1.0                 -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>讨论区</title>
+	<link rel="stylesheet" href="__PUBLIC__/front/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/css/main.css">
+	<script src="__PUBLIC__/front/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- 头部导航栏 -->
+		<include file="./Application/Home/View/Public/header.html" />
+		<!-- 中间内容区 -->
+		<div id="main">
+			<section class="content">
+				<header class="content-header"></header>
+				<volist name="topic" id="topic">
+					<!-- start title 分块小主题区域 -->
+					<article class="content-topic {$topic.class}">
+						<img src="__PUBLIC__/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+						<section class="content-article">
+							<header class="title">
+								<a href="__APP__/Home/Index/topic?id={$topic.topicid}">{$topic.topicname}</a>
+								<i class="topic-class">{$topic.class}</i>
+							</header>
+							<div class="real-content">
+								<pre>{$topic.content}</pre>
+							</div>
+							<div class="about-title">
+								<span><i>·</i><a href="">{$topic.author}</a></span>
+								<span><i>·</i>{$topic.time}</span>
+							</div>
+						</section>
+						<section class="content-dowhat">
+							<span><a href="javascript:;" onclick="zan({$topic.topicid});">点赞</a><i id="zanid{$topic.topicid}" style="font-style:normal;">{$topic.zan}</i></span> 
+							<span><a href="javascript:;" onclick="pinlun();">评论</a><i id="zanid{$topic.topicid}" style="font-style:normal;">{$topic.resnum}</i></span>
+							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
+						</section>
+					</article>
+					<script>
+						if($(".topic-class").html()=="悬赏贴"){
+							$(this).parent().parent().parent().addClass("reward");
+						}
+						function zan(id){
+							$.post('__URL__/zan',{
+								topicid:id
+							},function(zannum){
+								if(zannum=="游客"){
+									alert("请登录\n\n您当前是游客身份，不支持点赞和评论");
+									window.location.href="__APP__/Home/Login/login";
+								}else{
+									if(zannum==$("#zanid"+id).html()){
+										alert("您已经点赞过此消息");
+									}else{
+										$("#zanid"+id).html(zannum);
+									}
+								}
+							})
+							
+						}
+						function pinlun(){
+							alert("评论");
+						}
+					</script>
+					<!-- end title -->
+				</volist>
+				<footer class="content-footer"></footer>
+			</section>
+			<section class="information">
+				
+			</section>
+		</div>
+		<!-- 尾部 -->
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+
+</body>
+</html>

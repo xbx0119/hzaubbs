@@ -1,0 +1,92 @@
+<!-- 项目开始日期：2016-02-26  -->
+<!-- 作者：黄一凡              -->
+<!-- 版本：1.0                 -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>讨论区</title>
+	<link rel="stylesheet" href="__PUBLIC__/front/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/css/main.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/css/topic.css">
+	<script src="__PUBLIC__/front/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- 头部导航栏 -->
+		<include file="./Application/Home/View/Public/header.html" />
+		<!-- 中间内容区 -->
+		<div id="main">
+			<section class="content">
+				<header class="content-header">主题</header>
+				<volist name="topic" id="topic">
+				<!-- start title 分块小主题区域 -->
+				<article class="content-topic topic-page">		
+					<header class="topic-header">
+						<img src="__PUBLIC__/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+						<h1>{$topic.topicname}</h1>
+						<!-- <i class="topic-class">{$topic.class}</i> -->
+						<div class="about-title">
+							<span>by {$topic.author}　 at {$topic.time}</span>
+						</div>
+					</header>
+					<section class="real-content">
+						<pre>{$topic.content}</pre>
+					</section>
+				</article>
+				<!-- end title -->
+				</volist>
+				<footer class="content-footer"></footer>
+			</section>
+			<section class="information">
+				
+			</section>
+			<section class="talk-area">
+				<header class="content-header">评论<button onclick="pinglun();">提交评论</button></header>
+				<form action="">
+					<textarea name="talk" id="talk"></textarea>
+				</form>
+			</section>
+			<!-- 回复区 -->
+			<section class="response-area">
+				<header class="content-header">回复</header>
+				<?php $i=1;?>
+				<volist name="response" id="response">
+				<article class="response">
+					<img src="__PUBLIC__/upload/head-img/hyf.jpg" alt="" class="response-img"/>
+					<section class="response-content">
+						<div class="about-response">
+							<span>{$response.responser}　{$response.restime}</span>
+							<span style="float:right;margin-right:1%"><?php echo $i;?>楼</span>
+						</div>
+						<div class="real-response-content">
+							{$response.rescontent}
+						</div>
+						
+					</section>
+				</article>
+				</volist>
+			</section>
+		</div>
+		<!-- 尾部 -->
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+	<script>
+		function pinglun(){
+			$.post('__URL__/pinglun',{
+				talk:$("#talk").val(),
+				topicID:{$topic.topicid}
+			},function(result){
+				if(result=="当前为游客身份不能评论，请登录"){
+					alert(result);
+					window.location.href="__APP__/Home/Login/login";
+				}else{
+					$("#talk").val('');
+					location.reload();
+				}
+			})
+		}
+	</script>
+</body>
+</html>
