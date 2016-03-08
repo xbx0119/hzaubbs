@@ -26,20 +26,22 @@ class LoginController extends Controller {
     		$where1['username']=$username;
     		$where1['password']=$password;
             $result1=$con->where($where1)->count();
-    		$name1=$con->where($where1)->getField('username');
-
-			$where2['email']=$username;
-    		$where2['password']=$password;
-    		$result2=$con->where($where2)->count();
-            $name2=$con->where($where2)->getField('username');
-
-    		if($result1==0&&$result2==0){
-    			$data="您输入的帐号或者密码不正确，请重新输入。";
-    		}else{
-
-                session('username',$name1.$name2);  //设置session username
-    			$data="pass";
-    		}
+            if($result1!=0){
+                $name1=$con->where($where1)->getField('username');
+                session('username',$name1);  //设置session username
+                $data="pass";
+            }else{
+                $where2['email']=$username;
+                $where2['password']=$password;
+                $result2=$con->where($where2)->count();
+                if($result2!=0){
+                    $name2=$con->where($where2)->getField('username');
+                    session('username',$name1);  //设置session username
+                    $data="pass";
+                }else{
+                    $data="您输入的帐号或者密码不正确，请重新输入。";
+                }
+            }
     	}
     	$this->ajaxReturn($data);
     }

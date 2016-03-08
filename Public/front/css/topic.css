@@ -181,6 +181,26 @@ div.real-response-content{
 }
 
 
+/*添加信息*/
+#add-topic{
+	width:100%;
+	min-height:200px;
+	margin-top:10px;
+	margin-left:20px;
+}
+#add-topic span{
+	display:block;
+	height:35px;
+	color:#333;
+}
+#add-topic span i{
+	width:8%;
+	text-align:right;
+	display:inline-block;
+	font-style:normal;
+}
+
+
 
 @media screen and (max-width:600px){
 	.topic-page header.topic-header h1{

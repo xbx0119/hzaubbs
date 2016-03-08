@@ -9,6 +9,7 @@
 	<title>讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
 </head>
 <body>
@@ -75,68 +76,39 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="content">
-				<header class="content-header">
-					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息 <i style="font-size:1em;font-style:normal;font-weight:bold;">+</i></a>
-				</header>
-				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
-					<article class="content-topic <?php echo ($topic["class"]); ?>">
-						<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="head-img"/>
-						<section class="content-article">
-							<header class="title">
-								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><?php echo ($topic["topicname"]); ?></a>
-								<i class="topic-class"><?php echo ($topic["class"]); ?></i>
-							</header>
-							<div class="real-content">
-								<pre><?php echo ($topic["content"]); ?></pre>
-							</div>
-							<div class="about-title">
-								<span><i>·</i><a href=""><?php echo ($topic["author"]); ?></a></span>
-								<span><i>·</i><?php echo ($topic["time"]); ?></span>
-							</div>
-						</section>
-						<section class="content-dowhat">
-							<span><a href="javascript:;" onclick="zan(<?php echo ($topic["topicid"]); ?>);">点赞</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["zan"]); ?></i></span> 
-							<span><a href="javascript:;" onclick="pinlun();">评论</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["resnum"]); ?></i></span>
-							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
-						</section>
-					</article>
-					<script>
-						if($(".topic-class").html()=="悬赏贴"){
-							$(this).parent().parent().parent().addClass("reward");
-						}
-						function zan(id){
-							$.post('/hzaubbs/index.php/Home/Index/zan',{
-								topicid:id
-							},function(zannum){
-								if(zannum=="游客"){
-									alert("请登录\n\n您当前是游客身份，不支持点赞和评论");
-									window.location.href="/hzaubbs/index.php/Home/Login/login";
-								}else{
-									if(zannum==$("#zanid"+id).html()){
-										alert("您已经点赞过此消息");
-									}else{
-										$("#zanid"+id).html(zannum);
-									}
-								}
-							})
-							
-						}
-						function pinlun(){
-							alert("评论");
-						}
-					</script>
-					<!-- end title --><?php endforeach; endif; else: echo "" ;endif; ?>
+				<header class="content-header">发布主题</header>
+				<form action="" id="add-topic">
+					<span><i>主题名：</i><input type="text"></span>
+					<span><i>类别：</i><input type="radio" value="一般贴"> 一般贴 　<input type="radio" value="悬赏贴"> 悬赏贴</span>
+					<span><i>内容：</i></span><textarea name="" id="" cols="30" rows="10"></textarea>
+				</form>
 				<footer class="content-footer"></footer>
 			</section>
 			<section class="information">
 				
 			</section>
+			
 		</div>
 		<!-- 尾部 -->
 		<footer id="bottom-footer">
 	<h1>&copy;2016 讨论区 <i>designed by</i> <a href="http://www.52feidian.com/" target="_blanket">沸点工作室</a></h1>
 </footer>
 	</div>
-
+	<script>
+		function pinglun(){
+			$.post('/hzaubbs/index.php/Home/Index/pinglun',{
+				talk:$("#talk").val(),
+				topicID:<?php echo ($topic["topicid"]); ?>
+			},function(result){
+				if(result=="当前为游客身份不能评论，请登录"){
+					alert(result);
+					window.location.href="/hzaubbs/index.php/Home/Login/login";
+				}else{
+					$("#talk").val('');
+					location.reload();
+				}
+			})
+		}
+	</script>
 </body>
 </html>

@@ -107,4 +107,9 @@ class IndexController extends Controller {
             $this->ajaxReturn("评论成功");
         }
     }
+    public function addtopic(){
+        $header=A('Public'); 
+        $header->header();
+        $this->display();
+    }
 }

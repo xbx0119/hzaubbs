@@ -1,2 +1,2 @@
 ﻿#hzaubbs
-正式使用github作为项目托管平台
+这是一个小论坛，项目目前效果见www.huangyifan0119.cn/hzaubbs

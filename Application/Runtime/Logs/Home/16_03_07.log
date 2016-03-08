@@ -2660,3 +2660,234 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
 
+[ 2016-03-07T23:19:47+08:00 ] ::1 /hzaubbs/index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008773s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 110 行.
+
+[ 2016-03-07T23:19:49+08:00 ] ::1 /hzaubbs/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-03-07T23:21:11+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-03-07T23:21:14+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-03-07T23:23:05+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-03-07T23:23:37+08:00 ] ::1 /hzaubbs/index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+
+[ 2016-03-07T23:23:48+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-03-07T23:24:24+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-03-07T23:28:08+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-03-07T23:30:00+08:00 ] ::1 /hzaubbs/index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 110 行.
+
+[ 2016-03-07T23:30:01+08:00 ] ::1 /hzaubbs/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+
+[ 2016-03-07T23:30:03+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-03-07T23:32:14+08:00 ] ::1 /hzaubbs/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+
+[ 2016-03-07T23:32:28+08:00 ] ::1 /hzaubbs/index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `username` FROM `user` WHERE `username` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-03-07T23:32:29+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+
+[ 2016-03-07T23:33:59+08:00 ] ::1 /hzaubbs/index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+
+[ 2016-03-07T23:34:05+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+
+[ 2016-03-07T23:34:20+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-03-07T23:34:34+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004680s ]
+
+[ 2016-03-07T23:36:16+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+
+[ 2016-03-07T23:36:31+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001295s ]
+
+[ 2016-03-07T23:36:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+
+[ 2016-03-07T23:36:53+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-03-07T23:37:00+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+
+[ 2016-03-07T23:37:24+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+
+[ 2016-03-07T23:37:59+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-03-07T23:38:29+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
+
+[ 2016-03-07T23:38:39+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-03-07T23:38:55+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+
+[ 2016-03-07T23:39:13+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001499s ]
+
+[ 2016-03-07T23:39:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+
+[ 2016-03-07T23:39:27+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002617s ]
+
+[ 2016-03-07T23:39:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+
+[ 2016-03-07T23:39:46+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+
+[ 2016-03-07T23:41:51+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-03-07T23:41:58+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+
+[ 2016-03-07T23:42:26+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-07T23:44:36+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002421s ]
+
+[ 2016-03-07T23:44:45+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+
+[ 2016-03-07T23:44:46+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-03-07T23:45:17+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+
+[ 2016-03-07T23:51:18+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-03-07T23:51:30+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+

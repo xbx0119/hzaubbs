@@ -24,6 +24,14 @@
 	box-shadow:0px 1px 1px #aaa;
 	margin-bottom:2px;
 }
+.content-header a{
+	color:#555;
+	line-height:30px;
+	margin-left:15px;
+}
+.content-header a:hover{
+	color:orange;
+}
 .content-footer{
 	height:40px;
 	box-shadow:0px -1px 1px #aaa;
