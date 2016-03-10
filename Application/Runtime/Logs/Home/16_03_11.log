@@ -1,0 +1,394 @@
+[ 2016-03-11T00:00:58+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-03-11T00:01:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-03-11T00:01:23+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+
+[ 2016-03-11T00:01:31+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-03-11T00:04:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-03-11T00:04:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-03-11T00:04:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-03-11T00:05:31+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-03-11T00:05:32+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-11T00:06:20+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-03-11T00:06:28+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+
+[ 2016-03-11T00:06:44+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-03-11T00:06:59+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-03-11T00:07:24+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-03-11T00:07:26+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-03-11T00:09:20+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+
+[ 2016-03-11T00:10:06+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-03-11T00:10:15+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001664s ]
+
+[ 2016-03-11T00:12:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-03-11T00:12:45+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-03-11T00:12:50+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-03-11T00:13:22+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-03-11T00:14:17+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+
+[ 2016-03-11T00:15:06+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-03-11T00:15:12+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-03-11T00:18:42+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-03-11T00:19:03+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-03-11T00:19:04+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-03-11T00:19:57+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+
+[ 2016-03-11T00:23:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+
+[ 2016-03-11T00:23:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-03-11T00:25:10+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-03-11T00:25:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2016-03-11T00:25:45+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+
+[ 2016-03-11T00:25:50+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-03-11T00:25:59+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-03-11T00:26:02+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-03-11T00:26:03+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+
+[ 2016-03-11T00:27:03+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-03-11T00:27:18+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-03-11T00:27:52+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-03-11T00:28:04+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+
+[ 2016-03-11T00:28:07+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-03-11T00:28:33+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-03-11T00:28:53+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2016-03-11T00:29:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+
+[ 2016-03-11T00:29:41+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-03-11T00:29:54+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-03-11T00:33:08+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-03-11T00:33:09+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-03-11T00:33:21+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-03-11T00:33:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002280s ]
+
+[ 2016-03-11T00:34:01+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2016-03-11T00:34:01+08:00 ] ::1 /hzaubbs/index.php/home/index/topic/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003183s ]
+
+[ 2016-03-11T00:34:12+08:00 ] ::1 /hzaubbs/index.php/Home/Index/pinglun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `response` [ RunTime:0.0087s ]
+SQL: INSERT INTO `response` (`topicID`,`responser`,`resContent`,`resTime`) VALUES ('5','博勋','可以可以','2016-03-11 00:34:12') [ RunTime:0.0581s ]
+
+[ 2016-03-11T00:34:12+08:00 ] ::1 /hzaubbs/index.php/home/index/topic/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+
+[ 2016-03-11T00:34:15+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+
+[ 2016-03-11T00:34:19+08:00 ] ::1 /hzaubbs/index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-03-11T00:35:07+08:00 ] ::1 /hzaubbs/index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-03-11T00:35:07+08:00 ] ::1 /hzaubbs/index.php/home/index/topic/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+
+[ 2016-03-11T00:35:15+08:00 ] ::1 /hzaubbs/index.php/Home/Index/pinglun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `response` [ RunTime:0.0092s ]
+SQL: INSERT INTO `response` (`topicID`,`responser`,`resContent`,`resTime`) VALUES ('6','博勋','我的我的','2016-03-11 00:35:15') [ RunTime:0.0570s ]
+
+[ 2016-03-11T00:35:15+08:00 ] ::1 /hzaubbs/index.php/home/index/topic/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002849s ]
+
+[ 2016-03-11T00:35:21+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-03-11T00:35:41+08:00 ] ::1 /hzaubbs/index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0115s ]
+SQL: SELECT `id` FROM `user` WHERE `username` = '博勋' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0072s ]
+SQL: SELECT `zan` FROM `topic` WHERE ( topicID = 5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `topic` SET `zan`='1/' WHERE ( topicID = 5 ) [ RunTime:0.0667s ]
+
+[ 2016-03-11T00:35:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0102s ]
+SQL: SELECT `id` FROM `user` WHERE `username` = '博勋' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0082s ]
+SQL: SELECT `zan` FROM `topic` WHERE ( topicID = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-03-11T00:35:54+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+
+[ 2016-03-11T00:35:57+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-03-11T00:36:47+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+
+[ 2016-03-11T00:37:04+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+
+[ 2016-03-11T00:37:13+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+
+[ 2016-03-11T00:37:38+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-03-11T00:37:51+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+
+[ 2016-03-11T00:38:07+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002719s ]
+

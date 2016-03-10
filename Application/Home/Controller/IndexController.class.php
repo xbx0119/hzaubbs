@@ -112,4 +112,20 @@ class IndexController extends Controller {
         $header->header();
         $this->display();
     }
+    public function do_addtopic(){
+        $data['topicName']=$_POST['topicname'];
+        $data['class']=$_POST['class'];
+        $data['content']=$_POST['content'];
+        $data['author']=$_SESSION['username'];
+        $data['time']=date('Y-m-d H:i:s');
+        //如果没有进入部落，则没有设置session，则置fourm为1
+        if(!isset($_SESSION['fourm'])||$_SESSION['fourm']==""){
+            $data['fourmID']=1;
+        }else{
+            $data['fourmID']=$_SESSION['fourm'];
+        }
+        $con=M('topic');
+        $result=$con->add($data);
+        $this->redirect("Index/topic?id=$result");
+    }
 }

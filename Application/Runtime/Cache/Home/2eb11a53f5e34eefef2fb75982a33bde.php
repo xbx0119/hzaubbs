@@ -76,11 +76,11 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="content">
-				<header class="content-header">发布主题</header>
-				<form action="" id="add-topic">
-					<span><i>主题名：</i><input type="text"></span>
-					<span><i>类别：</i><input type="radio" value="一般贴"> 一般贴 　<input type="radio" value="悬赏贴"> 悬赏贴</span>
-					<span><i>内容：</i></span><textarea name="" id="" cols="30" rows="10"></textarea>
+				<header class="content-header">发布主题<button class="letout" onclick="submit();">发布</button></header>
+				<form action="/hzaubbs/index.php/Home/Index/do_addtopic" id="add-topic" method="post">
+					<span><i>主题名：</i><input type="text" name="topicname" id="topicname"></span>
+					<span><i>类别：</i><input type="radio" value="一般贴" id="yiban" name="class"> <label for="yiban">一般贴</label> 　<input type="radio" value="悬赏贴" id="xuanshang" name="class"> <label for="xuanshang">悬赏贴</label></span>
+					<span><i>内容：</i><textarea name="content"></textarea></span>
 				</form>
 				<footer class="content-footer"></footer>
 			</section>
@@ -95,19 +95,17 @@
 </footer>
 	</div>
 	<script>
-		function pinglun(){
-			$.post('/hzaubbs/index.php/Home/Index/pinglun',{
-				talk:$("#talk").val(),
-				topicID:<?php echo ($topic["topicid"]); ?>
-			},function(result){
-				if(result=="当前为游客身份不能评论，请登录"){
-					alert(result);
-					window.location.href="/hzaubbs/index.php/Home/Login/login";
-				}else{
-					$("#talk").val('');
-					location.reload();
-				}
-			})
+		function submit(){
+			$str=$("#topicname").val();
+			if($.trim($str)==""){
+				alert("主题名不能为空！");
+			}else if($("input:radio[name='class']:checked").val()==null){
+				alert("请选择类别！");
+			}else if($.trim($("textarea").val())==""){
+				alert("请填写主题内容");
+			}else{
+				$("#add-topic").submit();
+			}
 		}
 	</script>
 </body>

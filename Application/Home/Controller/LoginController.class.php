@@ -36,7 +36,7 @@ class LoginController extends Controller {
                 $result2=$con->where($where2)->count();
                 if($result2!=0){
                     $name2=$con->where($where2)->getField('username');
-                    session('username',$name1);  //设置session username
+                    session('username',$name2);  //设置session username
                     $data="pass";
                 }else{
                     $data="您输入的帐号或者密码不正确，请重新输入。";
