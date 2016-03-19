@@ -108,9 +108,14 @@ class IndexController extends Controller {
         }
     }
     public function addtopic(){
-        $header=A('Public'); 
-        $header->header();
-        $this->display();
+        if(!isset($_SESSION['username'])||$_SESSION['username']==""){
+            $this->redirect('Login/login');
+        }else{
+            $header=A('Public'); 
+            $header->header();
+            $this->display();
+        }
+        
     }
     public function do_addtopic(){
         $data['topicName']=$_POST['topicname'];

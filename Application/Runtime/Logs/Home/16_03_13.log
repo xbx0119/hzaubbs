@@ -1,0 +1,10 @@
+[ 2016-03-13T15:34:59+08:00 ] ::1 /hzaubbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.123107s ]
+
+[ 2016-03-13T15:35:03+08:00 ] ::1 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+

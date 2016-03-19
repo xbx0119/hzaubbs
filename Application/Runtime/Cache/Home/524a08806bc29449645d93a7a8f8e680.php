@@ -28,7 +28,7 @@
 					<ul>
 						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="../Login/do_logout">退出登陆</a></li>
+						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>

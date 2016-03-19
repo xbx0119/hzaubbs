@@ -28,7 +28,7 @@
 					<ul>
 						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="../Login/do_logout">退出登陆</a></li>
+						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>
@@ -77,6 +77,8 @@
 			<section class="content">
 				<header class="content-header">
 					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息 <i style="font-size:1em;font-style:normal;font-weight:bold;">+</i></a>
+					<button class="choose-class">悬赏贴</button>
+					<button class="choose-class">一般贴</button>
 				</header>
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 					<article class="content-topic <?php echo ($topic["class"]); ?>">
