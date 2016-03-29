@@ -75,12 +75,52 @@
 </header>
 		<!-- 中间内容区 -->
 		<div id="main">
-			
+			<section class="main-header">
+				<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+				<h1>博勋</h1>
+			</section>
+			<section class="main-side">
+				
+			</section>
+			<section class="main-container">
+				<nav class="main-container-nav">
+					<ul class="main-container-nav-ul">
+						<li>最近创建的话题</li>
+						<!-- <span></span> -->
+						<li>最近的回复 </li>
+					</ul>
+				</nav>
+				<hr class="hrhr">
+				<div class="main-container-article">
+					<article class="main-container-news show-article">
+						<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><div class="main-container-topic">
+								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><h1><?php echo ($topic["topicname"]); ?></h1><i>赞：<?php echo ($topic["zan"]); ?> ｜ 评：<?php echo ($topic["resnum"]); ?>｜<?php echo ($topic["time"]); ?></i></a>
+								
+							</div>
+							<hr class="hrhr"><?php endforeach; endif; else: echo "" ;endif; ?>	
+						<!-- <hr class="hrhr"> -->
+					</article>
+					<!-- <span></span> -->
+					<article class="main-container-news">
+						666
+					</article>
+					<footer class="main-container-article-footer">
+						
+					</footer>
+				</div>
+			</section>
 		</div>
 		<!-- 尾部 -->
 		<footer id="bottom-footer">
 	<h1>&copy;2016 讨论区 <i>designed by</i> <a href="http://www.52feidian.com/" target="_blanket">沸点工作室</a></h1>
 </footer>
 	</div>
+<script>
+	$(".main-container-nav-ul > li").click(function(){
+		var index=$(this).index();
+		$(".main-container-article > article").eq(index).siblings("article").removeClass("show-article");
+		$(".main-container-article > article").eq(index).addClass("show-article");
+	})
+</script>
 </body>
 </html>

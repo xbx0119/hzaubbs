@@ -183,3 +183,23 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
 
+[ 2016-03-19T23:51:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+
+[ 2016-03-19T23:51:37+08:00 ] ::1 /hzaubbs/index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-03-19T23:51:41+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+
+[ 2016-03-19T23:51:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+
