@@ -16,6 +16,7 @@ class LoginController extends Controller {
     public function dologin(){
     	$username=$_POST['username'];
     	$password=$_POST['password'];
+        $remember=$_POST['remember'];
     	$data=null;
     	if($username==""){
     		$data="你还没有输入帐号！";
@@ -27,16 +28,33 @@ class LoginController extends Controller {
     		$where1['password']=$password;
             $result1=$con->where($where1)->count();
             if($result1!=0){
+                //输入用户名
                 $name1=$con->where($where1)->getField('username');
                 session('username',$name1);  //设置session username
+                if($remember=="true"){
+                    //记住账号
+                    // cookie('user',array("username":"$username","password":"$password","remember":"$remember"));
+                    cookie('username',$name1);
+
+                }else{
+                    cookie('username',null);
+                }
                 $data="pass";
             }else{
+                //输入邮箱
                 $where2['email']=$username;
                 $where2['password']=$password;
                 $result2=$con->where($where2)->count();
                 if($result2!=0){
                     $name2=$con->where($where2)->getField('username');
                     session('username',$name2);  //设置session username
+                    if($remember=="true"){
+                        //记住账号
+                        // cookie('user',array("username":"$username","password":"$password","remember":"$remember"));
+                        cookie('username',$name2);
+                    }else{
+                        cookie('username',null);
+                    }
                     $data="pass";
                 }else{
                     $data="您输入的帐号或者密码不正确，请重新输入。";
@@ -81,6 +99,7 @@ class LoginController extends Controller {
         }
     }
     public function do_logout(){
+        cookie('username',null); // 删除name
         session('username',null); // 删除name
         $this->redirect('Login/login');
     }

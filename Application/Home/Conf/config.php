@@ -26,4 +26,10 @@ return array(
 	// 'session_auto_start' => true,
 	// 	'SESSION_OPTIONS' => array('use_trans_sid'=>1),
 	// 	 'SESSION_OPTIONS' => array('use_trans_sid'=>1,'use_only_cookies'=>1)
+	'COOKIE_DOMAIN' => 'localhost', //cookie的有效域名
+	'COOKIE_PATH' => '/' , //保存路径
+
+	'COOKIE_EXPIRE' => 36000, //cookie的生存时间
+
+	//'USER_AUTH_KEY' =>'authId', // 用户认证SESSION标记
 );

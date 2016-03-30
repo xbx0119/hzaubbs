@@ -30,4 +30,10 @@ class PersonController extends Controller {
             $this->display();
         }
     }
+    public function changepwd(){
+        $this->display();
+    }
+    public function edit(){
+        $this->display();
+    }
 }

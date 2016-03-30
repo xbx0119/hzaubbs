@@ -3,8 +3,12 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
+        if(isset($_COOKIE['username']) && $_COOKIE['username']!=""){
+            session('username',$_COOKIE['username']);
+        }
         $header=A('Public'); 
         $header->header();
+
         $con=M('topic');
         $con2=M('response');
         // $topic=$con->order('convert(class using gb2312) asc,topicID desc')->select();
