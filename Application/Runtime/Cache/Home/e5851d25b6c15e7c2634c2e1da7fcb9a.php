@@ -118,7 +118,10 @@
 						    	<a href="javascript:void(0)" class="upload-img">
 						      		<label for="upload-file">上传图像</label>
 						      	</a>
-						      	<input type="file" class="" name="upload-file" id="upload-file" />
+						      	<form action="/hzaubbs/index.php/Home/Person/changeimg" method="post" id="imgform">
+						      		<input type="file" class="" name="upload-file" id="upload-file" />
+						      	</form>
+						      	
 						    </div>
 						    <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" />
 						    <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  />
@@ -194,6 +197,13 @@
 
 </script>
 <script type="text/javascript">
+	var imgurl="";
+	function changeimg(){
+		alert("change"); 	
+		// alert($("#upload-file").value());
+		// $("#imgform").submit();
+		alert(imgurl);
+	}
 	$(window).load(function() {
 		var options =
 		{
@@ -213,9 +223,11 @@
 		})
 		$('#btnCrop').on('click', function(){
 			var img = cropper.getDataURL();
+			imgurl=img;
 			$('.cropped').html('');
 			$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:80px;height:80px;margin-top:4px;box-shadow:0px 0px 12px #7E7E7E;" ><p></p>');
-			$('.cropped').append('<input type="submit'+'" value="确定'+'" style="width:60px;height:30px;background:#F38E81;border:0px;border-radius:5px;margin-top:8px;'+'" />');
+			// $('.cropped').append('<input type="flie'+'" name="'+'"headimg">');
+			$('.cropped').append('<input type="button'+'" value="确定'+'" style="width:60px;height:30px;background:#F38E81;border:0px;border-radius:3px;margin-top:15px;color:#fff;'+'" onclick="'+'changeimg();" />');
 		})
 		$('#btnZoomIn').on('click', function(){
 			cropper.zoomIn();
@@ -223,7 +235,9 @@
 		$('#btnZoomOut').on('click', function(){
 			cropper.zoomOut();
 		})
+		
 	});
+		
 </script>
 </body>
 </html>

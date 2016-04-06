@@ -34,6 +34,41 @@ class PersonController extends Controller {
         $this->display();
     }
     public function edit(){
+        $header=A('Public'); 
+        $header->header();
+
         $this->display();
+    }
+    public function changeimg(){
+        $file = $_FILES['file'];//得到传输的数据
+        //得到文件名称
+        $name = $file['name'];
+        var_dump($name);
+
+        // $config = array(
+        //          'maxSize'    =>    3145728,
+        //          'rootPath'   =>    './Public/upload/head-img',
+        //          'savePath'   =>    '',
+        //          'saveName'   =>    array('uniqid',''),
+        //          'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+        //          'autoSub'    =>    false,
+        //          'subName'    =>    array('date','Ymd'),
+        //     );
+        // $upload = new \Think\Upload($config);// 实例化上传类
+        // // 上传文件 
+        // $info   =   $upload->upload();
+        // //dump($info);exit;
+        // if($info){
+        //     $map['img_name']=$info['file']['savename'];
+        //     $m=M('img');
+        //     if($m->add($map)){
+        //         $this->redirect('edit');
+        //     }else{
+        //         $this->error('上传失败','edit');
+        //     }
+        // }else{
+        //     // $this->error($upload->getError());
+        //     $this->error('上传失败','edit');
+        // }
     }
 }
