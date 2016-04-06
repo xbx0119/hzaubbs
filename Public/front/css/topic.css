@@ -87,16 +87,17 @@ section.talk-area header button{
 	font-size:0.8em;
 	letter-spacing:1px;
 	width:70px;
-	height:20px;
+	height:30px;
 	margin-top:5px;
 	margin-right:15px;
-	background:lightblue;
-	color:#666;
-	border:1px solid #ccc;
+	background:#09629C;
+	color:#fff;
+	border:0px;
+	border-radius:3px;
 }
 section.talk-area header button:hover{
-	box-shadow:0px 0px 2px blue;
-	text-shadow:0px 0px 1px #999;
+	/*box-shadow:0px 0px 2px blue;*/
+	text-shadow:0px 0px 1px gold;
 	cursor:pointer;
 }
 section.talk-area form{
@@ -133,8 +134,8 @@ section.response-area{
 }
 header.content-header{
 	text-indent:10px;
-	line-height:30px;
-	color:#888;
+	line-height:40px;
+	color:#555;
 }
 article.response{
 	min-height:90px;
@@ -184,20 +185,21 @@ div.real-response-content{
 /*添加信息*/
 button.letout{
 	float:right;
-	width:80px;
-	height:24px;
-	margin-top:3px;
-	margin-right:5%;
-	border:1px solid #ccc;
+	width:70px;
+	height:30px;
+	margin-top:5px;
+	margin-right:2%;
+	border:0px;
 	cursor:pointer;
 	/*background:-moz-linear-gradient(left,#ccc 0%,#aaa 50%,#ccc 100%);*/
-	background:lightblue;
-	letter-spacing:2px;
-	color:#555;
+	background:#09629C;
+	letter-spacing:3px;
+	color:#fff;
+	border-radius:3px;
 }
 button.letout:hover{
-	box-shadow:0px 0px 2px #999;
-	color:red;
+	/*box-shadow:0px 0px 2px #999;*/
+	color:gold;
 }
 #add-topic{
 	width:100%;

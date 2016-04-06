@@ -1,0 +1,15 @@
+[ 2016-04-01T00:24:42+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-04-01T00:24:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-04-01T00:24:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+

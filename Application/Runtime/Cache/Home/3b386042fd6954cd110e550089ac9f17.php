@@ -9,7 +9,8 @@
 	<title>讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css">
+	<!-- <link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css"> -->
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
 </head>
 <body>
