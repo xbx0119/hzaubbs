@@ -83,7 +83,7 @@
 				</header>
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 					<article class="content-topic <?php echo ($topic["class"]); ?>">
-						<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+						<img src="/hzaubbs/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
 						<section class="content-article">
 							<header class="title">
 								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><?php echo ($topic["topicname"]); ?></a>

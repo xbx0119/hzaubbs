@@ -11,9 +11,10 @@
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/change-head-img.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
+
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/hzaubbs/Public/front/js/cropbox.js"></script>
+
 	<script>
 		jQuery(document).ready(function($){
 			$('.change-head-img').click(function(){
@@ -26,6 +27,19 @@
 			})
 		})
 	</script>
+	<style>
+	    .error {
+	        font-size: 18px;
+	        font-weight:normal;
+	        color: red;
+	        margin-left:20px;
+	        float:left;
+	        line-height:50px;
+	    }
+	    label{width:60px;display: inline-block}
+	    .info li{margin:10px 0}
+	    
+	</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -91,7 +105,7 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="main-header edit">
-				<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/hzaubbs/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
 				<div class="edit-header">
 					<h1>博勋 <i>个人资料</i> </h1>
 					<a href="javascript:;" class="change-head-img">[更换头像]</a>
@@ -102,32 +116,37 @@
 			<div class="model">
 			     <div class="model-head">
 			          <a href="javascript:;" title="关闭" class="close">×</a>
-			          <h3>更换头像</h3>
+			          <label for="image_file" class="choose-img"></a>选择图片</label>
+			          <div class="error">注意：上传前，先截图</div> 
+			          
 			     </div>
 			     <div class="model-form-div">
-	                <div class="img-container">
-						<div class="imageBox">
-						    <div class="thumbBox"></div>
-						    <div class="spinner" style="display: none">Loading...</div>
-						</div>
-						
-						<div class="cropped"></div>
-						<div class="action"> 
-						    <!-- <input type="file" id="file" style=" width: 200px">-->
-						    <div class="new-contentarea tc"> 
-						    	<a href="javascript:void(0)" class="upload-img">
-						      		<label for="upload-file">上传图像</label>
-						      	</a>
-						      	<form action="/hzaubbs/index.php/Home/Person/changeimg" method="post" id="imgform">
-						      		<input type="file" class="" name="upload-file" id="upload-file" />
-						      	</form>
-						      	
-						    </div>
-						    <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" />
-						    <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  />
-						    <input type="button" id="btnCrop"  class="Btnsty_peyton" value="裁切" />
-				  		</div>
-					</div>
+					<div class="demo">
+		                <form id="upload_form" enctype="multipart/form-data" method="post" action="/hzaubbs/index.php/Home/Person/upload" onsubmit="return checkForm()">
+		                    <!-- hidden crop params -->
+		                    <input type="hidden" id="x1" name="x1"autocomplete="off" />
+		                    <input type="hidden" id="y1" name="y1" autocomplete="off"/>
+		                    <input type="hidden" id="x2" name="x2"autocomplete="off" />
+		                    <input type="hidden" id="y2" name="y2"autocomplete="off" />
+							 <!-- 隐藏文件上传框 label绑定 -->
+		                    <input type="file" name="image_file" id="image_file" onchange="fileSelectHandler()" style="display:none;" />
+		                    <!-- 图片预览 -->
+		                    <div class="step2">
+		                        <img id="preview" />
+	                            <div class="info">
+		                            <ul style="display:none;">
+		                                <li><label>文件大小</label> <input type="text" id="filesize" name="filesize" class="input" autocomplete="off" /></li>
+		                                <li><label>类型</label> <input type="text" id="filetype" name="filetype" class="input"autocomplete="off"/></li>
+		                                <li><label>图像尺寸</label> <input type="text" id="filedim" name="filedim" class="input"autocomplete="off"/></li>
+		                                <li><label>宽度</label> <input type="text" id="w" name="w" class="input"autocomplete="off"/></li>
+		                                <li><label>高度</label> <input type="text" id="h" name="h" class="input"autocomplete="off"/></li>
+		                            </ul>
+	                        	</div>
+		                        <input type="submit" value="上传" class="btn" id="submit-img" style="display:none;"/>
+		                        <label for="submit-img" class="choose-img submit-conform" ></a>确定</label>
+		                    </div>
+		                </form>
+		            </div>
 			     </div>
 			</div>
 			<div class="model-mask"></div>
@@ -175,7 +194,10 @@
 	<h1>&copy;2016 讨论区 <i>designed by</i> <a href="http://www.52feidian.com/" target="_blanket">沸点工作室</a></h1>
 </footer>
 	</div>
+
+
 <script src="/hzaubbs/Public/front/js/city/jquery.cxselect.min.js"></script>
+
 <script>
 	$(".main-container-nav-ul > li").click(function(){
 		var index=$(this).index();
@@ -196,48 +218,9 @@
 	});
 
 </script>
-<script type="text/javascript">
-	var imgurl="";
-	function changeimg(){
-		alert("change"); 	
-		// alert($("#upload-file").value());
-		// $("#imgform").submit();
-		alert(imgurl);
-	}
-	$(window).load(function() {
-		var options =
-		{
-			thumbBox: '.thumbBox',
-			spinner: '.spinner',
-			imgSrc: '/hzaubbs/Public/front/images/noimg.jpg'
-		}
-		var cropper = $('.imageBox').cropbox(options);
-		$('#upload-file').on('change', function(){
-			var reader = new FileReader();
-			reader.onload = function(e) {
-				options.imgSrc = e.target.result;
-				cropper = $('.imageBox').cropbox(options);
-			}
-			reader.readAsDataURL(this.files[0]);
-			this.files = [];
-		})
-		$('#btnCrop').on('click', function(){
-			var img = cropper.getDataURL();
-			imgurl=img;
-			$('.cropped').html('');
-			$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:80px;height:80px;margin-top:4px;box-shadow:0px 0px 12px #7E7E7E;" ><p></p>');
-			// $('.cropped').append('<input type="flie'+'" name="'+'"headimg">');
-			$('.cropped').append('<input type="button'+'" value="确定'+'" style="width:60px;height:30px;background:#F38E81;border:0px;border-radius:3px;margin-top:15px;color:#fff;'+'" onclick="'+'changeimg();" />');
-		})
-		$('#btnZoomIn').on('click', function(){
-			cropper.zoomIn();
-		})
-		$('#btnZoomOut').on('click', function(){
-			cropper.zoomOut();
-		})
-		
-	});
-		
-</script>
+<script src="/hzaubbs/Public/front/js/jqueryforimg.js"></script>
+<script src="/hzaubbs/Public/front/js/jquery.jcrop.min.js"></script>
+
+<script src="/hzaubbs/Public/front/js/script.js"></script>
 </body>
 </html>

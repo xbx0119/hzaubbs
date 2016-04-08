@@ -23,3 +23,1464 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
 
+[ 2016-04-07T15:57:28+08:00 ] ::1 /hzaubbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+
+[ 2016-04-07T15:57:32+08:00 ] ::1 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+
+[ 2016-04-07T15:57:46+08:00 ] ::1 /hzaubbs/index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002138s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `username` FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-04-07T15:57:46+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+
+[ 2016-04-07T15:57:49+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-04-07T15:57:50+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+
+[ 2016-04-07T15:58:53+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+
+[ 2016-04-07T16:11:29+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001633s ]
+
+[ 2016-04-07T16:11:30+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002119s ]
+
+[ 2016-04-07T16:23:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+
+[ 2016-04-07T16:23:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+
+[ 2016-04-07T16:58:05+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+
+[ 2016-04-07T17:00:14+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004037s ]
+
+[ 2016-04-07T17:11:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001602s ]
+
+[ 2016-04-07T17:13:57+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002460s ]
+
+[ 2016-04-07T17:14:46+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002060s ]
+
+[ 2016-04-07T17:16:58+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002650s ]
+
+[ 2016-04-07T17:17:12+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+
+[ 2016-04-07T17:17:14+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001582s ]
+
+[ 2016-04-07T17:17:42+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+
+[ 2016-04-07T17:18:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+
+[ 2016-04-07T17:18:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002614s ]
+
+[ 2016-04-07T17:18:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001796s ]
+
+[ 2016-04-07T17:18:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001421s ]
+
+[ 2016-04-07T17:18:40+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004381s ]
+
+[ 2016-04-07T17:18:58+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+
+[ 2016-04-07T17:19:27+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+
+[ 2016-04-07T17:19:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002199s ]
+
+[ 2016-04-07T17:20:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001749s ]
+
+[ 2016-04-07T17:20:25+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002411s ]
+
+[ 2016-04-07T17:20:32+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+
+[ 2016-04-07T17:20:49+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003462s ]
+
+[ 2016-04-07T17:21:01+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002337s ]
+
+[ 2016-04-07T17:22:09+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002519s ]
+
+[ 2016-04-07T17:22:47+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001747s ]
+
+[ 2016-04-07T17:22:59+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002786s ]
+
+[ 2016-04-07T17:23:11+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001987s ]
+
+[ 2016-04-07T17:23:16+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001979s ]
+
+[ 2016-04-07T17:24:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-04-07T17:24:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004011s ]
+
+[ 2016-04-07T17:25:20+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001875s ]
+
+[ 2016-04-07T17:26:04+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+
+[ 2016-04-07T17:26:13+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+
+[ 2016-04-07T17:27:39+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-04-07T17:30:16+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004023s ]
+
+[ 2016-04-07T17:30:34+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+
+[ 2016-04-07T17:31:25+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004391s ]
+
+[ 2016-04-07T17:31:37+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001677s ]
+
+[ 2016-04-07T17:31:50+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+
+[ 2016-04-07T17:32:14+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-04-07T17:32:27+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+
+[ 2016-04-07T17:32:42+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000430s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005043s ]
+
+[ 2016-04-07T17:35:07+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002449s ]
+
+[ 2016-04-07T17:35:16+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002377s ]
+
+[ 2016-04-07T17:37:24+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001996s ]
+
+[ 2016-04-07T17:41:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002171s ]
+
+[ 2016-04-07T17:44:30+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-04-07T17:58:58+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+
+[ 2016-04-07T17:59:27+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+
+[ 2016-04-07T17:59:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002639s ]
+
+[ 2016-04-07T17:59:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002812s ]
+
+[ 2016-04-07T17:59:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002262s ]
+
+[ 2016-04-07T17:59:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002548s ]
+
+[ 2016-04-07T17:59:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008689s ]
+
+[ 2016-04-07T18:00:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001911s ]
+
+[ 2016-04-07T18:00:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001441s ]
+
+[ 2016-04-07T18:00:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002446s ]
+
+[ 2016-04-07T18:00:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008370s ]
+
+[ 2016-04-07T18:00:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002661s ]
+
+[ 2016-04-07T18:00:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+
+[ 2016-04-07T18:15:24+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+
+[ 2016-04-07T18:18:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+
+[ 2016-04-07T18:18:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+
+[ 2016-04-07T18:34:57+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+
+[ 2016-04-07T18:43:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+
+[ 2016-04-07T18:44:06+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001463s ]
+
+[ 2016-04-07T18:45:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002463s ]
+
+[ 2016-04-07T18:45:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002486s ]
+
+[ 2016-04-07T18:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001892s ]
+
+[ 2016-04-07T18:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003713s ]
+
+[ 2016-04-07T18:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002256s ]
+
+[ 2016-04-07T18:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001854s ]
+
+[ 2016-04-07T18:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001819s ]
+
+[ 2016-04-07T18:45:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002123s ]
+
+[ 2016-04-07T18:45:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002260s ]
+
+[ 2016-04-07T18:46:04+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+
+[ 2016-04-07T18:47:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001898s ]
+
+[ 2016-04-07T19:30:42+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002148s ]
+
+[ 2016-04-07T19:32:38+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+
+[ 2016-04-07T19:37:50+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002661s ]
+
+[ 2016-04-07T19:39:24+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001690s ]
+
+[ 2016-04-07T19:40:48+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001975s ]
+
+[ 2016-04-07T19:45:44+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+
+[ 2016-04-07T19:46:26+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005279s ]
+
+[ 2016-04-07T19:46:32+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002148s ]
+
+[ 2016-04-07T19:46:37+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+
+[ 2016-04-07T19:47:09+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+
+[ 2016-04-07T19:48:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002385s ]
+
+[ 2016-04-07T19:48:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/css/jquery.Jcrop.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010766s ]
+ERR: 非法操作:css
+
+[ 2016-04-07T19:48:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/jquery.jcrop.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005480s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:48:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/script.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002464s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:48:20+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/script.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:48:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001988s ]
+
+[ 2016-04-07T19:48:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/css/jquery.Jcrop.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021299s ]
+ERR: 非法操作:css
+
+[ 2016-04-07T19:48:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/jquery.jcrop.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:48:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/script.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004185s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:48:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/js/script.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004558s ]
+ERR: 非法操作:js
+
+[ 2016-04-07T19:50:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001540s ]
+
+[ 2016-04-07T19:51:23+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002422s ]
+
+[ 2016-04-07T19:52:49+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+
+[ 2016-04-07T19:54:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+
+[ 2016-04-07T20:01:09+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+
+[ 2016-04-07T20:01:23+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001976s ]
+
+[ 2016-04-07T20:12:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+
+[ 2016-04-07T20:12:11+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+
+[ 2016-04-07T20:12:31+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+
+[ 2016-04-07T20:15:12+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001910s ]
+
+[ 2016-04-07T20:16:52+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+
+[ 2016-04-07T20:17:38+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002177s ]
+
+[ 2016-04-07T20:17:57+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002611s ]
+
+[ 2016-04-07T20:18:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-04-07T20:18:56+08:00 ] ::1 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001537s ]
+
+[ 2016-04-07T20:18:57+08:00 ] ::1 /hzaubbs/index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `username` FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-04-07T20:18:58+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+
+[ 2016-04-07T20:19:01+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+
+[ 2016-04-07T20:19:03+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004222s ]
+
+[ 2016-04-07T20:20:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004890s ]
+
+[ 2016-04-07T20:21:03+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001584s ]
+
+[ 2016-04-07T20:22:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002220s ]
+
+[ 2016-04-07T20:22:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004388s ]
+
+[ 2016-04-07T20:22:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+
+[ 2016-04-07T20:22:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002510s ]
+
+[ 2016-04-07T20:22:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003123s ]
+
+[ 2016-04-07T20:26:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+
+[ 2016-04-07T20:29:40+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001920s ]
+
+[ 2016-04-07T20:29:40+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+
+[ 2016-04-07T20:29:40+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-04-07T20:29:52+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+ERR: 非法操作:upload.php
+
+[ 2016-04-07T20:30:51+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002264s ]
+
+[ 2016-04-07T20:30:57+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002298s ]
+ERR: 非法操作:upload.php
+
+[ 2016-04-07T20:33:49+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+
+[ 2016-04-07T20:33:55+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+
+[ 2016-04-07T20:35:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-04-07T20:42:09+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003246s ]
+
+[ 2016-04-07T20:42:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001763s ]
+
+[ 2016-04-07T20:42:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload/14600329370174.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007925s ]
+
+[ 2016-04-07T20:42:18+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload/1460032937.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001440s ]
+
+[ 2016-04-07T20:49:34+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000450s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004253s ]
+
+[ 2016-04-07T20:49:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003495s ]
+
+[ 2016-04-07T20:49:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img14600333810528.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002388s ]
+
+[ 2016-04-07T20:49:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img1460033381.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003107s ]
+
+[ 2016-04-07T20:50:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+
+[ 2016-04-07T20:50:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/1460033453.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+
+[ 2016-04-07T20:50:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/14600334530173.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002648s ]
+
+[ 2016-04-07T20:51:37+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002232s ]
+
+[ 2016-04-07T20:51:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002303s ]
+
+[ 2016-04-07T20:51:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/14600335050283.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002243s ]
+
+[ 2016-04-07T20:51:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/1460033505.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002310s ]
+
+[ 2016-04-07T20:53:01+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001507s ]
+
+[ 2016-04-07T20:53:22+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+
+[ 2016-04-07T20:53:22+08:00 ] ::1 /hzaubbs/index.php/Home/Person/__PUBLIC__/upload/head-img/Public/upload/head-img/14600336010064.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+
+[ 2016-04-07T20:53:22+08:00 ] ::1 /hzaubbs/index.php/Home/Person/__PUBLIC__/upload/head-img/Public/upload/head-img/1460033601.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000322s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002598s ]
+
+[ 2016-04-07T20:54:13+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001993s ]
+
+[ 2016-04-07T20:54:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003953s ]
+
+[ 2016-04-07T20:54:55+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001474s ]
+
+[ 2016-04-07T20:54:55+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/Public/upload/head-img/14600336950847.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+
+[ 2016-04-07T20:54:55+08:00 ] ::1 /hzaubbs/index.php/Home/Person/Public/upload/head-img/Public/upload/head-img/1460033695.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+
+[ 2016-04-07T20:59:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+
+[ 2016-04-07T21:00:05+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001578s ]
+
+[ 2016-04-07T21:00:05+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-04-07T21:05:18+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-04-07T21:07:06+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+
+[ 2016-04-07T21:07:12+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002738s ]
+
+[ 2016-04-07T21:07:13+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+
+[ 2016-04-07T21:10:34+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002945s ]
+
+[ 2016-04-07T21:10:36+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+
+[ 2016-04-07T21:10:39+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001839s ]
+
+[ 2016-04-07T21:10:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001898s ]
+
+[ 2016-04-07T21:14:33+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002670s ]
+
+[ 2016-04-07T21:14:35+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+
+[ 2016-04-07T21:14:51+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002525s ]
+
+[ 2016-04-07T21:14:51+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002678s ]
+
+[ 2016-04-07T21:14:53+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+
+[ 2016-04-07T21:16:36+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+
+[ 2016-04-07T21:16:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-04-07T21:16:53+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+
+[ 2016-04-07T21:16:56+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002090s ]
+
+[ 2016-04-07T21:17:28+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+
+[ 2016-04-07T21:18:09+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001903s ]
+
+[ 2016-04-07T21:19:28+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002446s ]
+
+[ 2016-04-07T21:21:49+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+
+[ 2016-04-07T21:21:56+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-04-07T21:23:17+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002379s ]
+
+[ 2016-04-07T21:24:03+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+
+[ 2016-04-07T21:24:33+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+
+[ 2016-04-07T21:24:46+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002201s ]
+
+[ 2016-04-07T21:24:53+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002172s ]
+
+[ 2016-04-07T21:26:52+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001907s ]
+
+[ 2016-04-07T21:27:02+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001734s ]
+
+[ 2016-04-07T21:27:02+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+
+[ 2016-04-07T21:28:09+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001997s ]
+
+[ 2016-04-07T21:28:17+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002134s ]
+
+[ 2016-04-07T21:28:17+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+
+[ 2016-04-07T21:30:22+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+
+[ 2016-04-07T21:30:31+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+
+[ 2016-04-07T21:30:31+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000598s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003077s ]
+
+[ 2016-04-07T21:31:51+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+
+[ 2016-04-07T21:32:01+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+
+[ 2016-04-07T21:32:01+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+
+[ 2016-04-07T21:33:11+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001993s ]
+
+[ 2016-04-07T21:33:21+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001663s ]
+
+[ 2016-04-07T21:33:21+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-04-07T21:33:48+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+
+[ 2016-04-07T21:34:32+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+
+[ 2016-04-07T21:34:42+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-04-07T21:34:42+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002085s ]
+
+[ 2016-04-07T21:34:56+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004039s ]
+
+[ 2016-04-07T21:35:03+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001907s ]
+
+[ 2016-04-07T21:36:10+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001674s ]
+
+[ 2016-04-07T21:36:25+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002686s ]
+
+[ 2016-04-07T21:36:41+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-04-07T21:37:41+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-04-07T21:37:47+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001539s ]
+
+[ 2016-04-07T21:37:48+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003138s ]
+
+[ 2016-04-07T21:38:10+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002481s ]
+
+[ 2016-04-07T21:46:01+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+
+[ 2016-04-07T21:46:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+
+[ 2016-04-07T21:46:43+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+
+[ 2016-04-07T21:47:02+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '博勋' in 'where clause'
+
+[ 2016-04-07T21:47:35+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+
+[ 2016-04-07T21:49:22+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001731s ]
+
+[ 2016-04-07T21:51:05+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002656s ]
+
+[ 2016-04-07T21:51:11+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001453s ]
+
+[ 2016-04-07T21:51:16+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+
+[ 2016-04-07T21:51:47+08:00 ] ::1 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001671s ]
+
+[ 2016-04-07T21:51:47+08:00 ] ::1 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+
+[ 2016-04-07T21:51:54+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+
+[ 2016-04-07T21:52:06+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003224s ]
+
+[ 2016-04-07T21:52:08+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+
+[ 2016-04-07T21:53:52+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+
+[ 2016-04-07T21:54:31+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+
+[ 2016-04-07T21:55:22+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002420s ]
+
+[ 2016-04-07T21:55:37+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002611s ]
+
+[ 2016-04-07T21:55:47+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+
+[ 2016-04-07T21:58:35+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003185s ]
+
+[ 2016-04-07T22:00:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+
+[ 2016-04-07T22:00:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001806s ]
+
+[ 2016-04-07T22:03:58+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+
+[ 2016-04-07T22:05:14+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+
+[ 2016-04-07T22:07:50+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+
+[ 2016-04-07T22:07:52+08:00 ] 192.168.1.103 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+
+[ 2016-04-07T22:08:04+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `username` FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-04-07T22:08:04+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002188s ]
+
+[ 2016-04-07T22:08:08+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+
+[ 2016-04-07T22:08:09+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+
+[ 2016-04-07T22:08:50+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001733s ]
+
+[ 2016-04-07T22:10:02+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001856s ]
+
+[ 2016-04-07T22:13:09+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+
+[ 2016-04-07T22:13:27+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+
+[ 2016-04-07T22:13:57+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002169s ]
+
+[ 2016-04-07T22:14:10+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-04-07T22:15:33+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+
+[ 2016-04-07T22:15:45+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+
+[ 2016-04-07T22:15:47+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001774s ]
+
+[ 2016-04-07T22:15:57+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+
+[ 2016-04-07T22:17:37+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002534s ]
+
+[ 2016-04-07T22:18:01+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-04-07T22:18:14+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+
+[ 2016-04-07T22:18:28+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002458s ]
+
+[ 2016-04-07T22:20:39+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+
+[ 2016-04-07T22:21:23+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001897s ]
+
+[ 2016-04-07T22:21:37+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-04-07T22:22:05+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001608s ]
+
+[ 2016-04-07T22:22:13+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002544s ]
+
+[ 2016-04-07T22:23:06+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-04-07T22:23:13+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+
+[ 2016-04-07T22:23:19+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+
+[ 2016-04-07T22:23:26+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001480s ]
+
+[ 2016-04-07T22:23:32+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+
+[ 2016-04-07T22:23:38+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+
+[ 2016-04-07T22:23:47+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000443s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+
+[ 2016-04-07T22:24:56+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Person/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+
+[ 2016-04-07T22:24:56+08:00 ] 192.168.1.103 /hzaubbs/index.php/home/person/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+
+[ 2016-04-07T22:25:03+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+
+[ 2016-04-07T22:25:53+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001473s ]
+
+[ 2016-04-07T22:25:57+08:00 ] 192.168.1.103 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001677s ]
+

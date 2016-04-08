@@ -11,6 +11,7 @@ class IndexController extends Controller {
 
         $con=M('topic');
         $con2=M('response');
+        $con3=M('user');
         // $topic=$con->order('convert(class using gb2312) asc,topicID desc')->select();
         //不能按先显示悬赏再显示一般贴
         $topic=$con->order('topicID desc')->select();
@@ -26,6 +27,13 @@ class IndexController extends Controller {
             $topic[$i]['zan']=substr_count($zan_string,'/');
 
             $topic[$i]['resnum']=$con2->where('topicID='.$topic[$i]['topicid'])->count();
+
+            $findimg['username']=$topic[$i]['author'];
+            $authorimg=$con3->where($findimg)->getField('img');
+            if($authorimg==null){
+                $authorimg="noimg.jpg";
+            }
+            $topic[$i]['img']=$authorimg;
         }
 
         $this->assign('topic',$topic);

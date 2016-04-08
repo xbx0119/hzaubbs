@@ -1,0 +1,51 @@
+[ 2016-04-08T12:44:38+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-04-08T12:44:44+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-04-08T12:46:30+08:00 ] ::1 /hzaubbs/index.php/Home/Index/topic?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-04-08T12:46:31+08:00 ] ::1 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-04-08T12:46:40+08:00 ] ::1 /hzaubbs/index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `user` WHERE `username` = '博勋' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-08T12:46:40+08:00 ] ::1 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-04-08T12:46:43+08:00 ] ::1 /hzaubbs/index.php/Home/Person/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-04-08T12:48:50+08:00 ] ::1 /hzaubbs/index.php/Home/Person/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-04-08T12:48:54+08:00 ] ::1 /hzaubbs/index.php/Home/Person/changepwd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+

@@ -20,7 +20,9 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="main-header">
-				<img src="__PUBLIC__/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+				<volist name="user" id="user">
+					<img src="__PUBLIC__/upload/head-img/{$user.img}" alt="" class="head-img"/>
+				</volist>
 				<h1>博勋</h1>
 			</section>
 			<section class="main-side">
