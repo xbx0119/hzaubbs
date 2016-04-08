@@ -36,6 +36,17 @@
 					<span><a href="">其他其他</a></span> -->
 				</div>
 			</section>
+			<section class="main-side">
+				<h1>部落信息</h1>
+				<div class="side-content">
+					<span><a href="__APP__/Home/Person/">编辑资料</a></span>
+					<i>|</i>
+					<span><a href="__APP__/Home/Person/">修改密码</a></span>
+					<!-- <span><a href="">其他其他</a></span>
+					<i>|</i>
+					<span><a href="">其他其他</a></span> -->
+				</div>
+			</section>
 			<section class="main-container">
 				<nav class="main-container-nav">
 					<ul class="main-container-nav-ul">
@@ -47,10 +58,10 @@
 				<hr class="hrhr">
 				<div class="main-container-article">
 					<article class="main-container-news show-article">
+						<!-- 最近创建的话题 -->
 						<volist name="topic" id="topic">
 							<div class="main-container-topic">
 								<a href="__APP__/Home/Index/topic?id={$topic.topicid}"><h1>{$topic.topicname}</h1><i>赞：{$topic.zan} ｜ 评：{$topic.resnum}｜{$topic.time}</i></a>
-								
 							</div>
 							<hr class="hrhr">
 						</volist>	
@@ -58,7 +69,14 @@
 					</article>
 					<!-- <span></span> -->
 					<article class="main-container-news">
-						666
+						<!-- 最近的回复 -->
+						<volist name="response" id="response">
+							<div class="main-container-response">
+								<a><h1>{$response.rescontent}</h1><i>[{$response.responser}] {$response.restime}</i></a>
+								
+							</div>
+							<hr class="hrhr">
+						</volist>
 					</article>
 					<footer class="main-container-article-footer">
 						

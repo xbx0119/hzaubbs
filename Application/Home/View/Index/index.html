@@ -20,9 +20,9 @@
 			<section class="content">
 				<header class="content-header">
 					<a href="__APP__/Home/Index/addtopic">发布消息</a>
-					<button class="choose-class">悬赏贴</button>
-					<button class="choose-class">一般贴</button>
-					<button class="choose-class">所有</button>
+					<button class="choose-class" id="index-choose-xuan">悬赏贴</button>
+					<button class="choose-class" id="index-choose-narmal">一般贴</button>
+					<button class="choose-class" id="index-choose-all">所有</button>
 				</header>
 				<volist name="topic" id="topic">
 					<!-- start title 分块小主题区域 -->
@@ -83,6 +83,19 @@
 		<!-- 尾部 -->
 		<include file="./Application/Home/View/Public/footer.html" />
 	</div>
-
+<script>
+	$("#index-choose-xuan").click(function(){
+		$(".reward").slideDown();
+		$(".narmal").slideUp();
+	})
+	$("#index-choose-narmal").click(function(){
+		$(".narmal").slideDown();
+		$(".reward").slideUp();
+	})
+	$("#index-choose-all").click(function(){
+		$(".reward").slideDown();
+		$(".narmal").slideDown();
+	})
+</script>
 </body>
 </html>

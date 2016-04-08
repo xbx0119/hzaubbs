@@ -77,9 +77,9 @@
 			<section class="content">
 				<header class="content-header">
 					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息</a>
-					<button class="choose-class">悬赏贴</button>
-					<button class="choose-class">一般贴</button>
-					<button class="choose-class">所有</button>
+					<button class="choose-class" id="index-choose-xuan">悬赏贴</button>
+					<button class="choose-class" id="index-choose-narmal">一般贴</button>
+					<button class="choose-class" id="index-choose-all">所有</button>
 				</header>
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 					<article class="content-topic <?php echo ($topic["class"]); ?>">
@@ -140,6 +140,19 @@
 	<h1>&copy;2016 讨论区 <i>designed by</i> <a href="http://www.52feidian.com/" target="_blanket">沸点工作室</a></h1>
 </footer>
 	</div>
-
+<script>
+	$("#index-choose-xuan").click(function(){
+		$(".reward").slideDown();
+		$(".narmal").slideUp();
+	})
+	$("#index-choose-narmal").click(function(){
+		$(".narmal").slideDown();
+		$(".reward").slideUp();
+	})
+	$("#index-choose-all").click(function(){
+		$(".reward").slideDown();
+		$(".narmal").slideDown();
+	})
+</script>
 </body>
 </html>

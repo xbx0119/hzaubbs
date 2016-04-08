@@ -102,6 +102,7 @@
 				<hr class="hrhr">
 				<div class="main-container-article">
 					<article class="main-container-news show-article">
+						<!-- 最近创建的话题 -->
 						<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><div class="main-container-topic">
 								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><h1><?php echo ($topic["topicname"]); ?></h1><i>赞：<?php echo ($topic["zan"]); ?> ｜ 评：<?php echo ($topic["resnum"]); ?>｜<?php echo ($topic["time"]); ?></i></a>
 								
@@ -111,7 +112,12 @@
 					</article>
 					<!-- <span></span> -->
 					<article class="main-container-news">
-						666
+						<!-- 最近的回复 -->
+						<?php if(is_array($response)): $i = 0; $__LIST__ = $response;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$response): $mod = ($i % 2 );++$i;?><div class="main-container-response">
+								<a><h1><?php echo ($response["rescontent"]); ?></h1><i>[<?php echo ($response["responser"]); ?>] <?php echo ($response["restime"]); ?></i></a>
+								
+							</div>
+							<hr class="hrhr"><?php endforeach; endif; else: echo "" ;endif; ?>
 					</article>
 					<footer class="main-container-article-footer">
 						

@@ -15,13 +15,14 @@ class IndexController extends Controller {
         // $topic=$con->order('convert(class using gb2312) asc,topicID desc')->select();
         //不能按先显示悬赏再显示一般贴
         $topic=$con->order('topicID desc')->select();
+        
         //为悬赏贴css增加reward类
         $length=count($topic);
         for($i=0;$i<$length;$i++){
             if($topic[$i]['class']=="悬赏贴"){
                 $topic[$i]['class']="reward";
             }else{
-                $topic[$i]['class']='null';
+                $topic[$i]['class']='narmal';
             }
             $zan_string=$topic[$i]['zan'];
             $topic[$i]['zan']=substr_count($zan_string,'/');
@@ -37,6 +38,7 @@ class IndexController extends Controller {
         }
 
         $this->assign('topic',$topic);
+        
         $this->display();
     }
     public function error(){

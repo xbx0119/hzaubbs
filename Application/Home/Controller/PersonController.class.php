@@ -14,6 +14,11 @@ class PersonController extends Controller {
         	$where['author']=$_SESSION['username'];
         	$data=$con->order('topicID desc')->select();
 
+            $topicid=$con->where($where)->getField('topicid',true);//获取用户发表的topic的id
+            // $response=$con2->where("topicID in $response_topic")->order('responseID desc')->select();
+            $choosetopicid['topicid']=array('in',implode(',',$topicid));
+            $result=$con2->where($choosetopicid)->order('responseID desc')->select();
+
         	$length=count($data);
         	for($i=0;$i<$length;$i++){
 	            // if($topic[$i]['class']=="悬赏贴"){
@@ -32,10 +37,21 @@ class PersonController extends Controller {
 
             $this->assign('user',$user);
         	$this->assign("topic",$data);
+
+            $this->assign('response',$result);
             $this->display();
         }
     }
     public function changepwd(){
+        $header=A('Public'); 
+        $header->header();
+
+        $con=M('user');
+        $where['username']=$_SESSION['username'];
+        $data=$con->where($where)->select();
+
+        $this->assign('user',$data);
+
         $this->display();
     }
     public function edit(){
@@ -50,6 +66,63 @@ class PersonController extends Controller {
 
         $this->display();
     }
+    // 执行修改密码
+    public function do_changepwd(){
+        $data['password']=$_POST['password'];
+        $con=M('user');
+        $where['username']=$_SESSION['username'];
+        $con->where($where)->save($data);
+        session('username',null);
+
+    }
+    public function changepwd_check(){
+        $value=$_POST['value'];
+        $kind=$_POST['kind'];
+        $txt="";
+        if($kind=="oldpwd"){
+            // 确认旧密码
+            if($value==""||$value==null){
+                $txt="*请输入密码";
+                $this->ajaxReturn($txt);
+            }else{
+                $con=M('user');
+                $where['username']=$_SESSION['username'];
+                
+                $password=$con->where($where)->getField('password');
+                if($value==$password){
+                    $txt="✔";
+                    $this->ajaxReturn($txt);
+                }else{
+                    $txt="密码不正确";
+                    $this->ajaxReturn($txt);
+                }
+            }
+        }
+        if($kind=="newpwd"){
+            // 判断新密码
+            if($value==""||$value==null){
+                $txt="*请输入新密码";
+                $this->ajaxReturn($txt);
+            }else{
+                $con=M('user');
+                $where['username']=$_SESSION['username'];
+                
+                $password=$con->where($where)->getField('password');
+                // 判断新密码与旧密码是否相同
+                if($value==$password){
+                    $txt="新密码与旧密码不能相同";
+                    $this->ajaxReturn($txt);
+                }else{
+                    $txt="✔";
+                    $this->ajaxReturn($txt);
+                }
+            }
+        }
+        
+        
+    }
+
+    // 上传头像
     public function upload(){
         $maxSize = 1024 * 1024; //1M 设置附件上传大小
         $allowExts = array("gif", "jpg", "jpeg", "png"); // 设置附件上传类型
