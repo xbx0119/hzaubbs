@@ -52,36 +52,20 @@
 			</section>
 			
 			<section class="main-container">
-				<nav class="main-container-nav">
-					<ul class="main-container-nav-ul">
-						<li>最近创建的话题</li>
-						<!-- <span></span> -->
-						<li>最近的回复 </li>
-					</ul>
-				</nav>
-				<hr class="hrhr">
+			
 				<div class="main-container-article">
 					<article class="main-container-news show-article">
-						<!-- 最近创建的话题 -->
-						<volist name="topic" id="topic">
-							<div class="main-container-topic">
-								<a href="__APP__/Home/Index/topic?id={$topic.topicid}"><h1>{$topic.topicname}</h1><i>赞：{$topic.zan} ｜ 评：{$topic.resnum}｜{$topic.time}</i></a>
-							</div>
-							<hr class="hrhr">
-						</volist>	
-						<!-- <hr class="hrhr"> -->
-					</article>
-					<!-- <span></span> -->
-					<article class="main-container-news">
-						<!-- 最近的回复 -->
-						<volist name="response" id="response">
-							<div class="main-container-response">
-								<a><h1>{$response.rescontent}</h1><i>[{$response.responser}] {$response.restime}</i></a>
-								
-							</div>
-							<hr class="hrhr">
+						<volist name="forum" id="aboutforum">
+							<section class="forum-section">
+								<img class="forumimg" src="__PUBLIC__/upload/forum-img/{$aboutforum.img}" alt="">
+								<h1>{$aboutforum.forumname}</h1>
+							</section>
+							
+							
 						</volist>
 					</article>
+					<!-- <span></span> -->
+					
 					<footer class="main-container-article-footer">
 						
 					</footer>
@@ -91,12 +75,5 @@
 		<!-- 尾部 -->
 		<include file="./Application/Home/View/Public/footer.html" />
 	</div>
-<script>
-	$(".main-container-nav-ul > li").click(function(){
-		var index=$(this).index();
-		$(".main-container-article > article").eq(index).siblings("article").removeClass("show-article");
-		$(".main-container-article > article").eq(index).addClass("show-article");
-	})
-</script>
 </body>
 </html>

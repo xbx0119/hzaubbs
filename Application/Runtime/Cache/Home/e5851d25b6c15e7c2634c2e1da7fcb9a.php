@@ -153,15 +153,29 @@
 			<!-- 模态框 -->
 
 			<section class="main-side">
-				<h1>账号设置</h1>
-				<div class="side-content">
-					<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
-					<i>|</i>
-					<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
-					<!-- <span><a href="">其他其他</a></span>
-					<i>|</i>
-					<span><a href="">其他其他</a></span> -->
-				</div>
+				<section class="main-side-second">
+					<h1>账号设置</h1>
+					<div class="side-content">
+						<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
+						<i>|</i>
+						<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
+						<!-- <span><a href="">其他其他</a></span>
+						<i>|</i>
+						<span><a href="">其他其他</a></span> -->
+					</div>
+				</section>
+				<section class="main-side-second">
+					<h1>部落信息</h1>
+					<div class="side-content">
+						<span><a href="/hzaubbs/index.php/Home/Person/myforum">我的部落</a></span>
+						<i>|</i>
+						<span><a href="/hzaubbs/index.php/Home/Person/createforum">创建部落</a></span>
+						<!-- <span><a href="">其他其他</a></span>
+						<i>|</i>
+						<span><a href="">其他其他</a></span> -->
+					</div>
+				</section>
+				
 			</section>
 			<section class="edit-content">
 				<form action="">

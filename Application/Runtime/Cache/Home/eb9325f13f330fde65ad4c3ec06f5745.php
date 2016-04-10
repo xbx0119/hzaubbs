@@ -75,44 +75,13 @@
 		<!-- 中间内容区 -->
 		<div id="forum">
 			<div class="left">
-				<volist>
-					<section class="content" id="aaa">
+				<?php if(is_array($forum)): $i = 0; $__LIST__ = $forum;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$volistforum): $mod = ($i % 2 );++$i;?><section class="content" id="aaa">
 						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
+							<div class="forum-bg front"><img src="/hzaubbs/Public/upload/forum-img/<?php echo ($volistforum["img"]); ?>" alt=""></div>
+							<div class="forum-bg back"><?php echo ($volistforum["introduce"]); ?></div>
 						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					
-				</volist>	
+						<span class="fourm-title" title=""><?php echo ($volistforum["forumname"]); ?></span>
+					</section><?php endforeach; endif; else: echo "" ;endif; ?>	
 			</div>
 			<div class="right">
 				<section class="top-three">

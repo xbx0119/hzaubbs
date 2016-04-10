@@ -67,7 +67,7 @@ div.forum-bg img{
 	-moz-backface-visibility: hidden; 
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
-	background: #E0E0E0;
+	background: #ECF2F5;
 	background: -webkit-linear-gradient(top,rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.02) 100%);padding: 0%; 
 	/*background: -moz-linear-gradient(top,rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%);padding: 0%; */
 }

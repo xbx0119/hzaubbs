@@ -46,23 +46,11 @@ class PersonController extends Controller {
         $header=A('Public'); 
         $header->header();
 
-        $con=M('user');
-        $where['username']=$_SESSION['username'];
-        $data=$con->where($where)->select();
-
-        $this->assign('user',$data);
-
         $this->display();
     }
     public function edit(){
         $header=A('Public'); 
         $header->header();
-
-        $con=M('user');
-        $where['username']=$_SESSION['username'];
-        $data=$con->where($where)->select();
-
-        $this->assign('user',$data);
 
         $this->display();
     }
@@ -166,5 +154,26 @@ class PersonController extends Controller {
             }
             $this->display();
         }
+    }
+    public function myforum(){
+        $header=A('Public'); 
+        $header->header();
+        $con=M('forum');
+        $where['manager']=$_SESSION['username'];
+        $manager=$con->where($where)->select();
+        
+        $length=count($manager);
+        for($i=0;$i<$length;$i++){
+            if($manager[$i]['img']==null || $manager[$i]['img']==""){
+                $manager[$i]['img']="noimg.jpg";
+            }
+        }
+        $this->assign('forum',$manager);
+        $this->display();
+    }
+    public function createforum(){
+        $header=A('Public'); 
+        $header->header();
+        $this->display();
     }
 }

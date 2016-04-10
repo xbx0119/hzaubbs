@@ -9,7 +9,22 @@
 	<title>讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<script>
+		// jQuery(document).ready(function($){
+		// 	$('.dopinlun').click(function(){
+		// 	    $('.model-mask').fadeIn(100);
+		// 	    $('.model').slideDown(200);
+		// 	})
+		// 	$('.model-head .close').click(function(){
+		// 	    $('.model-mask').fadeOut(100);
+		// 	    $('.model').slideUp(200);
+		// 	})
+		// })
+	</script>
+	
 </head>
 <body>
 	<div id="wrapper">
@@ -99,9 +114,28 @@
 						</section>
 						<section class="content-dowhat">
 							<span><a href="javascript:;" onclick="zan(<?php echo ($topic["topicid"]); ?>);">点赞</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["zan"]); ?></i></span> 
-							<span><a href="javascript:;" onclick="pinlun();">评论</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["resnum"]); ?></i></span>
+							<form action="" method="post" style="display:none;">
+								<input type="text" name="pinlun" id="pinlun">
+							</form>
+							<span><a href="javascript:;" onclick="pinlun();" class="dopinlun">评论</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["resnum"]); ?></i></span>
 							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
 						</section>
+
+						<!-- 模态框 -->
+						<div class="model">
+						     <div class="model-head">
+						          <a href="javascript:;" title="关闭" class="close">×</a>
+						          <h1>评论</h1>
+						          
+						     </div>
+						     <div class="model-form-div">
+								<div class="demo">
+					                
+					            </div>
+						     </div>
+						</div>
+						<div class="model-mask"></div>
+						<!-- 模态框 -->
 					</article>
 					<script>
 						if($(".topic-class").html()=="悬赏贴"){
@@ -124,9 +158,7 @@
 							})
 							
 						}
-						function pinlun(){
-							alert("评论");
-						}
+						
 					</script>
 					<!-- end title --><?php endforeach; endif; else: echo "" ;endif; ?>
 				<footer class="content-footer"></footer>

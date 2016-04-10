@@ -9,8 +9,8 @@
 	<title>讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
+	<!-- <link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css"> -->
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
-
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
 </head>
 <body>
@@ -76,13 +76,10 @@
 </header>
 		<!-- 中间内容区 -->
 		<div id="main">
-			<section class="main-header edit">
+			<section class="main-header">
 				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/hzaubbs/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
-				<div class="edit-header">
-					<h1>博勋 <i>修改密码</i> </h1>
-				</div>
+				<h1>博勋</h1>
 			</section>
-
 			<section class="main-side">
 				<section class="main-side-second">
 					<h1>账号设置</h1>
@@ -108,14 +105,22 @@
 				</section>
 				
 			</section>
-			<section class="edit-content">
-				<form>
-					<span><i>密码</i><input type="password" name="oldpwd" id="oldpwd" placeholder="请填写旧密码"><h6></h6></span>
-					<span><i>新密码</i><input type="password" name="newpwd" id="newpwd" placeholder="请填写新密码"><h6></h6></span>
-					<span><i>确认新密码</i><input type="password" name="newpwd2" id="newpwd2" placeholder="请确认新密码"><h6></h6></span>
+			
+			<section class="main-container">
+			
+				<div class="main-container-article">
+					<article class="main-container-news show-article">
+						<?php if(is_array($forum)): $i = 0; $__LIST__ = $forum;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$aboutforum): $mod = ($i % 2 );++$i;?><section class="forum-section">
+								<img class="forumimg" src="/hzaubbs/Public/upload/forum-img/<?php echo ($aboutforum["img"]); ?>" alt="">
+								<h1><?php echo ($aboutforum["forumname"]); ?></h1>
+							</section><?php endforeach; endif; else: echo "" ;endif; ?>
+					</article>
+					<!-- <span></span> -->
 					
-					<a href="javascript:;" class="submit" id="submit_password" onclick="submit()">确定</a>
-				</form>
+					<footer class="main-container-article-footer">
+						
+					</footer>
+				</div>
 			</section>
 		</div>
 		<!-- 尾部 -->
@@ -123,59 +128,5 @@
 	<h1>&copy;2016 讨论区 <i>designed by</i> <a href="http://www.52feidian.com/" target="_blanket">沸点工作室</a></h1>
 </footer>
 	</div>
-<script>
-	var flag=false;
-	var time=setInterval(function(){
-
-		$.post('/hzaubbs/index.php/Home/Person/changepwd_check',{
-			kind:"oldpwd",
-			value:$("#oldpwd").val()
-		},function(txt){
-			 $("#oldpwd").siblings('h6').html(txt);
-		})
-
-		$.post('/hzaubbs/index.php/Home/Person/changepwd_check',{
-			kind:"newpwd",
-			value:$("#newpwd").val()
-		},function(txt){
-			 $("#newpwd").siblings('h6').html(txt);
-		})
-
-		if($("#newpwd").val()==""||$("#newpwd").val()==null){
-
-		}else{
-			if($("#newpwd").val()!=$("#newpwd2").val()){
-				$("#newpwd2").siblings('h6').html("密码不一致");
-			}else{
-				$("#newpwd2").siblings('h6').html("✔");
-			}
-		}
-
-		var flag1=$("#oldpwd").siblings('h6').html();
-		var flag2=$("#newpwd").siblings('h6').html();
-		var flag3=$("#newpwd2").siblings('h6').html();
-		if(flag1=="✔" && flag2=="✔" && flag3=="✔"){
-			flag=true;
-			$("#submit_password").css("background","#005CA2");
-			$("#submit_password").css("color","gold");
-		}else{
-			flag=false;
-			$("#submit_password").css("background","");
-			$("#submit_password").css("color","");
-		}
-	},100);
-			
-	function submit(){
-		if(flag==true){
-			clearInterval(time);
-			$.post('/hzaubbs/index.php/Home/Person/do_changepwd',{
-				password:$("#newpwd").val()
-			},function(){
-				window.location.href="/hzaubbs/index.php/Home/Login/login";
-			})
-		}
-		
-	}
-</script>
 </body>
 </html>

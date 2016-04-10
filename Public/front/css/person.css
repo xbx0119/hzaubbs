@@ -27,11 +27,17 @@
 	min-height:80px;
 	float:right;
 	margin-right:2%;
-	box-shadow:0px 0px 2px #aaa;
-	background:#fff;
-	border-radius:5px;
+	/*background:#fff;*/
 }
-.main-side h1{
+.main-side-second{
+	min-height:110px;
+	margin-bottom:15px;
+	clear:both;
+	box-shadow:0px 0px 2px #aaa;
+	border-radius:5px;
+	background:#fff;
+}
+.main-side-second h1{
 	font-size:1.3em;
 	margin-left:1em;
 	font-weight:400;
@@ -40,7 +46,7 @@
 	line-height:50px;
 	display:block;
 }
-.main-side span{
+.main-side-second span{
 	width:35%;
 	height:45px;
 	line-height:45px;
@@ -51,25 +57,25 @@
 	letter-spacing:1px;
 	/*background:#ccc;*/
 }
-.main-side span:nth-child(1){
+.main-side-second span:nth-child(1){
 	margin-left:11%;
 }
-.main-side span:nth-child(4){
+.main-side-second span:nth-child(4){
 	margin-left:11%;
 }
-.main-side span a{
+.main-side-second span a{
 	line-height:45px;
 	width:100%;
 	height:100%;
 	color:#0A65A1;
 	display:inline-block;
 }
-.main-side span a:hover{
+.main-side-second span a:hover{
 	background:#2A7EC3;
 	border-radius:5px;
 	color:#fff;
 }
-.main-side i{
+.main-side-second i{
 	float:left;
 	margin-left:3%;
 	margin-right:3%;
@@ -354,6 +360,24 @@ a.submit{
 	letter-spacing:2px;
 }
 
+
+/*myforum*/
+.forum-section{
+	height:110px;
+	background:red;
+}
+img.forumimg{
+	width:150px;
+	height:110px;
+	border-radius:3px;
+	float:left;
+}
+.forum-section h1{
+	font-size:18px;
+	font-weight:400;
+	margin-left:20px;
+	display:inline-block;
+}
 
 
 @media screen and (max-width:600px){

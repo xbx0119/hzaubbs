@@ -51,18 +51,49 @@ class IndexController extends Controller {
         //显示主题
         $con=M('topic');
         $data=$con->where("topicID = $topicID")->select();
-        // var_dump($data);
-        $this->assign('topic',$data);
+        
         //显示回复
         $con2=M('response');
         $response=$con2->where("topicID = $topicID")->select();
-        $this->assign('response',$response);
+       
+        // 显示topic头像
+        $con3=M('user');
+        $where['username']=$data[0]['author'];
+        $author=$con3->where($where)->find();
+        $data[0]['img']=$author['img'];
+
+        // 显示回复头像
+        $length=count($response);
+        for($i=0;$i<$length;$i++){
+            $where['username']=$response[$i]['responser'];
+            $responser=$con3->where($where)->select();
+            if($responser[0]['img']==null || $responser[0]['img']==""){
+                $response[$i]['img']="noimg.jpg";
+            }else{
+                
+                 $response[$i]['img']=$responser[0]['img'];
+            }
+           
+        }
+        $this->assign('topic',$data);
+        $this->assign('response',$response);   
+        
+        
         $this->display();
     }
     public function forum(){
         $header=A('Public'); 
         $header->header();
 
+        $con=M('forum');
+        $data=$con->select();
+        $length=count($data);
+        for($i=0;$i<$length;$i++){
+            if($data[$i]['img']==null || $data[$i]['img']==""){
+                $data[$i]['img']="noimg.jpg";
+            }
+        }
+        $this->assign('forum',$data);
         $this->display();
     }
     //点赞功能

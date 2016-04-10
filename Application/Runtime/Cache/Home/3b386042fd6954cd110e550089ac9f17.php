@@ -81,16 +81,31 @@
 				<h1>博勋</h1>
 			</section>
 			<section class="main-side">
-				<h1>账号设置</h1>
-				<div class="side-content">
-					<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
-					<i>|</i>
-					<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
-					<!-- <span><a href="">其他其他</a></span>
-					<i>|</i>
-					<span><a href="">其他其他</a></span> -->
-				</div>
+				<section class="main-side-second">
+					<h1>账号设置</h1>
+					<div class="side-content">
+						<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
+						<i>|</i>
+						<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
+						<!-- <span><a href="">其他其他</a></span>
+						<i>|</i>
+						<span><a href="">其他其他</a></span> -->
+					</div>
+				</section>
+				<section class="main-side-second">
+					<h1>部落信息</h1>
+					<div class="side-content">
+						<span><a href="/hzaubbs/index.php/Home/Person/myforum">我的部落</a></span>
+						<i>|</i>
+						<span><a href="/hzaubbs/index.php/Home/Person/createforum">创建部落</a></span>
+						<!-- <span><a href="">其他其他</a></span>
+						<i>|</i>
+						<span><a href="">其他其他</a></span> -->
+					</div>
+				</section>
+				
 			</section>
+			
 			<section class="main-container">
 				<nav class="main-container-nav">
 					<ul class="main-container-nav-ul">
@@ -105,7 +120,6 @@
 						<!-- 最近创建的话题 -->
 						<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><div class="main-container-topic">
 								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><h1><?php echo ($topic["topicname"]); ?></h1><i>赞：<?php echo ($topic["zan"]); ?> ｜ 评：<?php echo ($topic["resnum"]); ?>｜<?php echo ($topic["time"]); ?></i></a>
-								
 							</div>
 							<hr class="hrhr"><?php endforeach; endif; else: echo "" ;endif; ?>	
 						<!-- <hr class="hrhr"> -->

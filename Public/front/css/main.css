@@ -1,6 +1,6 @@
 #main{
 	width:78%;
-	min-height:600px;
+	min-height:300px;
 	margin-left:11%;
 	margin-top:20px;
 	margin-bottom:20px;
@@ -250,7 +250,7 @@
 @media screen and (max-width:600px){
 	#main{
 		width:96%;
-		min-height:700px;
+		min-height:300px;
 		margin-left:2%;
 		margin-top:5px;
 		margin-bottom:20px;

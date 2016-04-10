@@ -18,43 +18,14 @@
 		<!-- 中间内容区 -->
 		<div id="forum">
 			<div class="left">
-				<volist>
+				<volist name="forum" id="volistforum">
 					<section class="content" id="aaa">
 						<div class="outer">
-							<div class="forum-bg front"><img src="__PUBLIC__/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
+							<div class="forum-bg front"><img src="__PUBLIC__/upload/forum-img/{$volistforum.img}" alt=""></div>
+							<div class="forum-bg back">{$volistforum.introduce}</div>
 						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="__PUBLIC__/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="__PUBLIC__/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="__PUBLIC__/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					<section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="__PUBLIC__/front/images/xxxy.jpg" alt=""></div>
-							<div class="forum-bg back">简介</div>
-						</div>
-						<span class="fourm-title" title="">信息学院</span>
-					</section>
-					
+						<span class="fourm-title" title="">{$volistforum.forumname}</span>
+					</section>					
 				</volist>	
 			</div>
 			<div class="right">

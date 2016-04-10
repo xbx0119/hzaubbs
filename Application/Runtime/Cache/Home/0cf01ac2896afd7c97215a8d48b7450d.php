@@ -80,7 +80,7 @@
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 				<article class="content-topic topic-page">		
 					<header class="topic-header">
-						<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="head-img"/>
+						<img src="/hzaubbs/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
 						<h1><?php echo ($topic["topicname"]); ?></h1>
 						<!-- <i class="topic-class"><?php echo ($topic["class"]); ?></i> -->
 						<div class="about-title">
@@ -98,8 +98,11 @@
 				
 			</section>
 			<section class="talk-area">
-				<header class="content-header">评论<button onclick="pinglun();">提交评论</button></header>
-				<form action="">
+				<header class="content-header" style="box-shadow:0px 0px 0px #000;">评论
+					<button onclick="writepinlun();" class="write">写评论</button>
+					<button onclick="pinglun();" class="submitpinlun" style="display:none;">提交评论</button>
+				</header>
+				<form action="" class="talkform" style="display:none;">
 					<textarea name="talk" id="talk"></textarea>
 				</form>
 			</section>
@@ -108,7 +111,7 @@
 				<header class="content-header">回复</header>
 				<?php $i=1;?>
 				<?php if(is_array($response)): $i = 0; $__LIST__ = $response;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$response): $mod = ($i % 2 );++$i;?><article class="response">
-					<img src="/hzaubbs/Public/upload/head-img/hyf.jpg" alt="" class="response-img"/>
+					<img src="/hzaubbs/Public/upload/head-img/<?php echo ($response["img"]); ?>" alt="" class="response-img"/>
 					<section class="response-content">
 						<div class="about-response">
 							<span><?php echo ($response["responser"]); ?>　<?php echo ($response["restime"]); ?></span>
@@ -128,6 +131,13 @@
 </footer>
 	</div>
 	<script>
+		function writepinlun(){
+			$(".write").hide();
+			$(".submitpinlun").show();
+			$(".content-header").css("box-shadow","0px 0px 1px #aaa");
+			$(".talkform").slideDown();
+
+		} 
 		function pinglun(){
 			$.post('/hzaubbs/index.php/Home/Index/pinglun',{
 				talk:$("#talk").val(),
