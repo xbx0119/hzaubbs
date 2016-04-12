@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>讨论区</title>
+	<title>狮山讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
 	<!-- <link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css"> -->
@@ -17,7 +17,7 @@
 	<div id="wrapper">
 		<!-- 头部导航栏 -->
 		<header id="tophead">
-	<h1>讨论区</h1>
+	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
 			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
@@ -113,6 +113,7 @@
 						<?php if(is_array($forum)): $i = 0; $__LIST__ = $forum;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$aboutforum): $mod = ($i % 2 );++$i;?><section class="forum-section">
 								<img class="forumimg" src="/hzaubbs/Public/upload/forum-img/<?php echo ($aboutforum["img"]); ?>" alt="">
 								<h1><?php echo ($aboutforum["forumname"]); ?></h1>
+								<span><?php echo ($aboutforum["introduce"]); ?></span>
 							</section><?php endforeach; endif; else: echo "" ;endif; ?>
 					</article>
 					<!-- <span></span> -->

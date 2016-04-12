@@ -8,7 +8,7 @@ class IndexController extends Controller {
         }
         $header=A('Public'); 
         $header->header();
-
+        session('forum',1);
         $con=M('topic');
         $con2=M('response');
         $con3=M('user');
@@ -168,14 +168,53 @@ class IndexController extends Controller {
         $data['content']=$_POST['content'];
         $data['author']=$_SESSION['username'];
         $data['time']=date('Y-m-d H:i:s');
-        //如果没有进入部落，则没有设置session，则置fourm为1
-        if(!isset($_SESSION['fourm'])||$_SESSION['fourm']==""){
-            $data['fourmID']=1;
+        //如果没有进入部落，则没有设置session，则置forum为1
+        if(!isset($_SESSION['forum'])||$_SESSION['forum']==""){
+            $data['forumID']=1;
         }else{
-            $data['fourmID']=$_SESSION['fourm'];
+            $data['forumID']=$_SESSION['forum'];
         }
         $con=M('topic');
         $result=$con->add($data);
         $this->redirect("Index/topic?id=$result");
+    }
+    public function buluo(){
+        $header=A('Public'); 
+        $header->header();
+        $id=$_GET['forumid'];
+        SESSION('forum',$id);
+        $con=M('forum');
+        $where['forumID']=$id;
+        $forum=$con->where($where)->find();
+
+        $con2=M('topic');
+        $con3=M('user');
+        //为悬赏贴css增加reward类
+        $topic=$con2->where($where)->order('topicID desc')->select();
+        $length=count($topic);
+        for($i=0;$i<$length;$i++){
+            if($topic[$i]['class']=="悬赏贴"){
+                $topic[$i]['class']="reward";
+            }else{
+                $topic[$i]['class']='narmal';
+            }
+            $zan_string=$topic[$i]['zan'];
+            $topic[$i]['zan']=substr_count($zan_string,'/');
+
+            $topic[$i]['resnum']=$con2->where('topicID='.$topic[$i]['topicid'])->count();
+
+            $findimg['username']=$topic[$i]['author'];
+            $authorimg=$con3->where($findimg)->getField('img');
+            if($authorimg==null){
+                $authorimg="noimg.jpg";
+            }
+            $topic[$i]['img']=$authorimg;
+        }
+
+
+        $this->assign('topic',$topic);
+        $this->assign('forum',$forum);
+        
+        $this->display();
     }
 }

@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>讨论区</title>
+	<title>狮山讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
@@ -45,7 +45,7 @@
 	<div id="wrapper">
 		<!-- 头部导航栏 -->
 		<header id="tophead">
-	<h1>讨论区</h1>
+	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
 			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>

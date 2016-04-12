@@ -77,6 +77,11 @@
 </header>
 		<!-- 中间内容区 -->
 		<div id="main">
+
+				<header class="content-header" style="margin-bottom:10px;height:50px;background:#F1FAFA;box-radius:5px;">
+					<h1 style="font-weight:400;font-size:1.3em;line-height:50px;text-indent:20px;"><?php echo ($forum["forumname"]); ?></h1>
+				</header>
+
 			<section class="content">
 				<header class="content-header">
 					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息</a>
@@ -109,7 +114,21 @@
 							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
 						</section>
 
-						
+						<!-- 模态框 -->
+						<div class="model">
+						     <div class="model-head">
+						          <a href="javascript:;" title="关闭" class="close">×</a>
+						          <h1>评论</h1>
+						          
+						     </div>
+						     <div class="model-form-div">
+								<div class="demo">
+					                
+					            </div>
+						     </div>
+						</div>
+						<div class="model-mask"></div>
+						<!-- 模态框 -->
 					</article>
 					<script>
 						if($(".topic-class").html()=="悬赏贴"){
@@ -137,7 +156,7 @@
 					<!-- end title --><?php endforeach; endif; else: echo "" ;endif; ?>
 				<footer class="content-footer"></footer>
 			</section>
-			<section class="information"  style="display:none;">
+			<section class="information">
 				
 			</section>
 		</div>

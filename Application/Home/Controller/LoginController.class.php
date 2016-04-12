@@ -74,8 +74,10 @@ class LoginController extends Controller {
             $con=M('user');
             $where["$kind"]=$value;
             $result=$con->where($where)->find();
-            if($result>=1){
+            if($result!=0){
                 $data="已注册";
+            }else{
+                $data='ok';
             }
         }
         $this->ajaxReturn($data);

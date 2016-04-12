@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>讨论区</title>
+	<title>狮山讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/forum.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 	<div id="wrapper">
 		<!-- 头部导航栏 -->
 		<header id="tophead">
-	<h1>讨论区</h1>
+	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
 			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
@@ -76,14 +76,17 @@
 		<div id="forum">
 			<div class="left">
 				<?php if(is_array($forum)): $i = 0; $__LIST__ = $forum;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$volistforum): $mod = ($i % 2 );++$i;?><section class="content" id="aaa">
-						<div class="outer">
-							<div class="forum-bg front"><img src="/hzaubbs/Public/upload/forum-img/<?php echo ($volistforum["img"]); ?>" alt=""></div>
-							<div class="forum-bg back"><?php echo ($volistforum["introduce"]); ?></div>
-						</div>
-						<span class="fourm-title" title=""><?php echo ($volistforum["forumname"]); ?></span>
+						<a href="/hzaubbs/index.php/Home/Index/buluo?forumid=<?php echo ($volistforum["forumid"]); ?>">
+							<div class="outer">
+								<div class="forum-bg front"><img src="/hzaubbs/Public/upload/forum-img/<?php echo ($volistforum["img"]); ?>" alt=""></div>
+								<div class="forum-bg back"><?php echo ($volistforum["introduce"]); ?></div>
+							</div>
+							<span class="fourm-title" title=""><?php echo ($volistforum["forumname"]); ?></span>
+						</a>
 					</section><?php endforeach; endif; else: echo "" ;endif; ?>	
 			</div>
-			<div class="right">
+			<div class="right" style="display:none;">
+				<!-- 功能未开发 -->
 				<section class="top-three">
 					<h1>部落活跃度排名</h1>
 					<ul>

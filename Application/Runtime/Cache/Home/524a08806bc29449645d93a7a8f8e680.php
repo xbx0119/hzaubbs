@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>讨论区</title>
+	<title>狮山讨论区</title>
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/login.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 	<div id="wrapper">
 		<!-- 头部导航栏 -->
 		<header id="tophead">
-	<h1>讨论区</h1>
+	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
 			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
@@ -77,12 +77,12 @@
 			<section id="register-form">
 				<h1>注册</h1>
 				<form action="/hzaubbs/index.php/Home/Login/doregister" method="post" />
-					<span><i>用户名</i><input type="text" name="username" id="username" /></span>
-					<span><i>密码</i><input type="password" name="password" id="password" /></span>
-					<span><i>确认密码</i><input type="password" id="confirm" /></span>
+					<span><i>用户名</i><input type="text" name="username" id="username" /><h6></h6></span>
+					<span><i>密码</i><input type="password" name="password" id="password" /><h6></h6></span>
+					<span><i>确认密码</i><input type="password" id="confirm" /><h6></h6></span>
 					<span><i>性别</i><input type="radio" name="sex" value="男" id="man" /><label for="man"> 男　</label><input type="radio" name="sex" value="女" id="woman" /><label for="woman"> 女</label><h6 id="sextip"></h6></span>
-					<span><i>E-mail</i><input type="text" name="email" id="email"></span>
-					<span><i>QQ</i><input type="text" name="qq" id="qq" /></span>
+					<span><i>E-mail</i><input type="text" name="email" id="email"><h6></h6></span>
+					<span><i>QQ</i><input type="text" name="qq" id="qq" /><h6></h6></span>
 					<a href="javascript:register();" id="zhuce">注册</a>
 				</form>
 			</section>
@@ -103,8 +103,83 @@
 		if(result==true){
 			$("form").submit();
 		}
+		clearInterval(time);
 	} 
-	function changecolor(){
+		
+</script>
+<script>
+	var state=new Array(false,false,false,false,false,false);
+	var time=setInterval(function(){
+		// 用户名
+		$.post('/hzaubbs/index.php/Home/Login/check',{
+			kind:"username",
+			value:$("#username").val()
+		},function(result){
+			if(result=='空'){
+				state[0]=false;
+				$("#username").siblings('h6').html("请填写用户名");
+			}else if(result=='已注册'){
+				state[0]=false;
+				$("#username").siblings('h6').html("已注册，请换一个用户名吧");
+			}else{
+				state[0]=true;
+				$("#username").siblings('h6').html("✔");
+			}
+		});
+		// 密码
+		if($("#password").val()==""){
+			state[1]=false;
+			$("#password").siblings('h6').html("请填写密码");
+		}else{
+			state[1]=true;
+			$("#password").siblings('h6').html("✔");
+		}
+		// 确认密码
+		if($("#password").val()!=""){
+			if($("#confirm").val()==""){
+				state[2]=false;
+				$("#confirm").siblings('h6').html("确认密码");
+			}else if($("#password").val()!=$("#confirm").val()){
+				state[2]=false;
+				$("#confirm").siblings('h6').html("✘ 密码不一致");
+			}else{
+				state[2]=true;
+				$("#confirm").siblings('h6').html("✔");
+			}
+		}
+		// 选择性别
+		if($("input[type=radio]:checked").val()==null){
+			state[3]=false;
+			$("#sextip").html("请选择性别");
+		}else{
+			state[3]=true;
+			$("#sextip").html("✔");
+		}
+		// 邮箱
+		$.post('/hzaubbs/index.php/Home/Login/check',{
+			kind:"email",
+			value:$("#email").val()
+		},function(result){
+			if(result=="空"){
+				state[4]=false;
+				$("#email").siblings('h6').html("请填写邮箱");
+			}else if(result=='已注册'){
+				state[4]=false;
+				$("#email").siblings('h6').html("此邮箱已注册，请更换邮箱或者找回密码");
+			}else{
+				state[4]=true;
+				$("#email").siblings('h6').html("✔");
+			}
+		});
+		// qq
+		if($("#qq").val()==""){
+			state[5]=false;
+			$("#qq").siblings('h6').html("请输入qq号");
+		}else{
+			state[5]=true;
+			$("#qq").siblings('h6').html("✔");
+		}
+		// 变色
 		var color=true;
 		for(var i=0;i<=5;i++){
 			if(state[i]==false){
@@ -117,115 +192,8 @@
 		}else{
 			$("#zhuce").css('background','#ccc');
 		}
-	}
-	var interval=setInterval("changecolor()",100);
-		
-</script>
-<script>
-	var state=new Array(false,false,false,false,false,false);
-	$(function(){
-		// start 用户名验证
-		$("#username").focus(function(){
-			$("#username").parent().find("h6").remove();
-		});
-		$("#username").blur(function(){
-			$kind='username';
-
-			$.post('/hzaubbs/index.php/Home/Login/check',{
-				kind:$kind,
-				value:$("#username").val()
-			},function(result){
-				if(result=='空'){
-					state[0]=false;
-					var txt="<h6>请填写用户名</h6>";
-				}else if(result=='已注册'){
-					state[0]=false;
-					var txt="<h6>已注册，请换一个用户名吧</h6>";  
-				}else{
-					state[0]=true;
-					var txt="<h6>✔</h6>"; 
-				}
-				$("#username").after(txt); 
-			});
-
-		}); 
-		// end 用户名验证
-		$("input[type=radio]").click(function(){
-			state[3]=true;
-			$("#sextip").html("✔");
-		})
-		// start 邮箱验证
-		$("#email").focus(function(){
-			$("#email").parent().find("h6").remove();
-		});
-		$("#email").blur(function(){
-			$kind='email';
-
-			$.post('/hzaubbs/index.php/Home/Login/check',{
-				kind:$kind,
-				value:$("#email").val()
-			},function(result){
-				if(result=="空"){
-					state[4]=false;
-					var txt="<h6>请填写邮箱</h6>";
-				}else if(result=='已注册'){
-					state[4]=false;
-					var txt="<h6>此邮箱已注册，请更换邮箱或者找回密码</h6>";  
-				}else{
-					state[4]=true;
-					var txt="<h6>✔</h6>"; 
-				}
-				$("#email").after(txt); 
-			});
-
-		}); 
-		// end 邮箱验证
-		// start 密码验证
-		$("#password").focus(function(){
-			$("#password").parent().find("h6").remove();
-		});
-		$("#password").blur(function(){
-			if($("#password").val()==""){
-				state[1]=false;
-				var txt="<h6>请填写密码</h6>";
-			}else{
-				state[1]=true;
-				var txt="<h6>✔</h6>"; 
-			}
-			$("#password").after(txt); 
-		}); 
-		$("#confirm").focus(function(){
-			$("#confirm").parent().find("h6").remove();
-		});
-		$("#confirm").blur(function(){
-			if($("#confirm").val()==""){
-				state[2]=false;
-				var txt="<h6>确认密码</h6>";
-			}else if($("#password").val()!=$("#confirm").val()){
-				state[2]=false;
-				var txt="<h6>✘ 密码不一致</h6>";
-			}else{
-				state[2]=true;
-				var txt="<h6>✔</h6>"; 
-			}
-			$("#confirm").after(txt); 
-		});
-		//start qq验证
-		$("#qq").focus(function(){
-			$("#qq").parent().find("h6").remove();
-		});
-		$("#qq").blur(function(){
-			if($("#qq").val()==""){
-				state[5]=false;
-				var txt="<h6>请输入qq号</h6>";
-			}else{
-				state[5]=true;
-				var txt="<h6>✔</h6>"; 
-			}
-			$("#qq").after(txt); 
-		});
-
-	})
+	},100);
+	// alert("ASdas");
 </script>
 </body>
 </html>
