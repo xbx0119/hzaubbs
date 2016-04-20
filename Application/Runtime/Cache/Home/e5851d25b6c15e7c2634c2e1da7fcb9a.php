@@ -7,13 +7,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>狮山讨论区</title>
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
+	<link rel="stylesheet" href="/Public/front/css/basic.css">
+	<link rel="stylesheet" href="/Public/front/css/main.css">
+	<link rel="stylesheet" href="/Public/front/css/person.css">
+	<link rel="stylesheet" href="/Public/front/css/model.css">
+	<link rel="stylesheet" href="/Public/front/css/jquery.jcrop.min.css">
 
-	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<script src="/Public/front/js/jquery.min.js"></script>
 
 	<script>
 		jQuery(document).ready(function($){
@@ -48,17 +48,17 @@
 	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
-			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
-			<li><a href="/hzaubbs/index.php/Home/Index/forum">部落</a></li>
+			<li><a href="/index.php/Home/Index/index">大厅</a></li>
+			<li><a href="/index.php/Home/Index/forum">部落</a></li>
 			<li><a href="javascript:history.go(-1);">返回</a></li>
 			<li class="li-state douser"><a href="<?php echo ($nav["url"]); ?>" class="douser"><?php echo ($nav["state"]); ?> <?php echo ($nav["i"]); ?></a>
 				<div id="loged"> 
 					<span class="org_bot_cor"></span>
 					<span class="emem"></span>
 					<ul>
-						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
+						<li><a href="/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
+						<li><a href="/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>
@@ -105,7 +105,7 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="main-header edit">
-				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/hzaubbs/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
 				<div class="edit-header">
 					<h1>博勋 <i>个人资料</i> </h1>
 					<a href="javascript:;" class="change-head-img">[更换头像]</a>
@@ -122,7 +122,7 @@
 			     </div>
 			     <div class="model-form-div">
 					<div class="demo">
-		                <form id="upload_form" enctype="multipart/form-data" method="post" action="/hzaubbs/index.php/Home/Person/upload" onsubmit="return checkForm()">
+		                <form id="upload_form" enctype="multipart/form-data" method="post" action="/index.php/Home/Person/upload" onsubmit="return checkForm()">
 		                    <!-- hidden crop params -->
 		                    <input type="hidden" id="x1" name="x1"autocomplete="off" />
 		                    <input type="hidden" id="y1" name="y1" autocomplete="off"/>
@@ -156,9 +156,9 @@
 				<section class="main-side-second">
 					<h1>账号设置</h1>
 					<div class="side-content">
-						<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
+						<span><a href="/index.php/Home/Person/edit">编辑资料</a></span>
 						<i>|</i>
-						<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
+						<span><a href="/index.php/Home/Person/changepwd">修改密码</a></span>
 						<!-- <span><a href="">其他其他</a></span>
 						<i>|</i>
 						<span><a href="">其他其他</a></span> -->
@@ -167,9 +167,9 @@
 				<section class="main-side-second">
 					<h1>部落信息</h1>
 					<div class="side-content">
-						<span><a href="/hzaubbs/index.php/Home/Person/myforum">我的部落</a></span>
+						<span><a href="/index.php/Home/Person/myforum">我的部落</a></span>
 						<i>|</i>
-						<span><a href="/hzaubbs/index.php/Home/Person/createforum">创建部落</a></span>
+						<span><a href="/index.php/Home/Person/createforum">创建部落</a></span>
 						<!-- <span><a href="">其他其他</a></span>
 						<i>|</i>
 						<span><a href="">其他其他</a></span> -->
@@ -210,7 +210,7 @@
 	</div>
 
 
-<script src="/hzaubbs/Public/front/js/city/jquery.cxselect.min.js"></script>
+<script src="/Public/front/js/city/jquery.cxselect.min.js"></script>
 
 <script>
 	$(".main-container-nav-ul > li").click(function(){
@@ -220,7 +220,7 @@
 	})
 
 
-	$.cxSelect.defaults.url = "/hzaubbs/Public/front/js/city/cityData.min.json";
+	$.cxSelect.defaults.url = "/Public/front/js/city/cityData.min.json";
 
 	$('#city_china').cxSelect({
 		selects: ['province', 'city', 'area']
@@ -232,9 +232,9 @@
 	});
 
 </script>
-<script src="/hzaubbs/Public/front/js/jqueryforimg.js"></script>
-<script src="/hzaubbs/Public/front/js/jquery.jcrop.min.js"></script>
+<script src="/Public/front/js/jqueryforimg.js"></script>
+<script src="/Public/front/js/jquery.jcrop.min.js"></script>
 
-<script src="/hzaubbs/Public/front/js/script.js"></script>
+<script src="/Public/front/js/script.js"></script>
 </body>
 </html>

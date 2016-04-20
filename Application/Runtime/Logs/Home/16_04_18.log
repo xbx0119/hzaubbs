@@ -1,0 +1,49 @@
+[ 2016-04-18T09:56:48+08:00 ] 87.134.125.187 /hzaubbs/index.php/home/Login/do_logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002517s ]
+
+[ 2016-04-18T09:56:50+08:00 ] 87.134.125.187 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-04-18T10:00:02+08:00 ] 117.136.81.136 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-04-18T10:00:22+08:00 ] 117.136.81.136 /index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with that of Think\Controller::error() C:\wamp\www\hzaubbs\Application\Home\Controller\IndexController.class.php 第 220 行.
+
+[ 2016-04-18T10:00:24+08:00 ] 117.136.81.136 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-04-18T10:00:29+08:00 ] 117.136.81.136 /index.php/Home/Index/topic?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-04-18T10:00:37+08:00 ] 117.136.81.136 /index.php/Home/Index/topic?id=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-04-18T10:00:46+08:00 ] 117.136.81.136 /index.php/Home/Index/topic?id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+
+[ 2016-04-18T15:26:55+08:00 ] 121.42.0.33 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002106s ]
+

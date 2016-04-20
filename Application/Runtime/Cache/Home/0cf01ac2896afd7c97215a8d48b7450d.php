@@ -7,10 +7,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>狮山讨论区</title>
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css">
-	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="/Public/front/css/basic.css">
+	<link rel="stylesheet" href="/Public/front/css/main.css">
+	<link rel="stylesheet" href="/Public/front/css/topic.css">
+	<script src="/Public/front/js/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -19,17 +19,17 @@
 	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
-			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
-			<li><a href="/hzaubbs/index.php/Home/Index/forum">部落</a></li>
+			<li><a href="/index.php/Home/Index/index">大厅</a></li>
+			<li><a href="/index.php/Home/Index/forum">部落</a></li>
 			<li><a href="javascript:history.go(-1);">返回</a></li>
 			<li class="li-state douser"><a href="<?php echo ($nav["url"]); ?>" class="douser"><?php echo ($nav["state"]); ?> <?php echo ($nav["i"]); ?></a>
 				<div id="loged"> 
 					<span class="org_bot_cor"></span>
 					<span class="emem"></span>
 					<ul>
-						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
+						<li><a href="/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
+						<li><a href="/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>
@@ -80,7 +80,7 @@
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 				<article class="content-topic topic-page">		
 					<header class="topic-header">
-						<img src="/hzaubbs/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
+						<img src="/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
 						<h1><?php echo ($topic["topicname"]); ?></h1>
 						<!-- <i class="topic-class"><?php echo ($topic["class"]); ?></i> -->
 						<div class="about-title">
@@ -111,7 +111,7 @@
 				<header class="content-header">回复</header>
 				<?php $i=1;?>
 				<?php if(is_array($response)): $i = 0; $__LIST__ = $response;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$response): $mod = ($i % 2 );++$i;?><article class="response">
-					<img src="/hzaubbs/Public/upload/head-img/<?php echo ($response["img"]); ?>" alt="" class="response-img"/>
+					<img src="/Public/upload/head-img/<?php echo ($response["img"]); ?>" alt="" class="response-img"/>
 					<section class="response-content">
 						<div class="about-response">
 							<span><?php echo ($response["responser"]); ?>　<?php echo ($response["restime"]); ?></span>
@@ -139,13 +139,13 @@
 
 		} 
 		function pinglun(){
-			$.post('/hzaubbs/index.php/Home/Index/pinglun',{
+			$.post('/index.php/Home/Index/pinglun',{
 				talk:$("#talk").val(),
 				topicID:<?php echo ($topic["topicid"]); ?>
 			},function(result){
 				if(result=="当前为游客身份不能评论，请登录"){
 					alert(result);
-					window.location.href="/hzaubbs/index.php/Home/Login/login";
+					window.location.href="/index.php/Home/Login/login";
 				}else{
 					$("#talk").val('');
 					location.reload();

@@ -1,0 +1,20 @@
+[ 2016-04-17T13:48:49+08:00 ] 220.249.99.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001978s ]
+
+[ 2016-04-17T17:05:09+08:00 ] 220.249.99.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001936s ]
+
+[ 2016-04-17T17:05:14+08:00 ] 220.249.99.175 /index.php/Home/Index/topic?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-04-17T21:43:55+08:00 ] 46.101.158.114 /hzaubbs/index.php/Home/Index/topic?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002440s ]
+

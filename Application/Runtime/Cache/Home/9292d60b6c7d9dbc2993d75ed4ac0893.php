@@ -7,11 +7,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>狮山讨论区</title>
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
-	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
-	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="/Public/front/css/basic.css">
+	<link rel="stylesheet" href="/Public/front/css/main.css">
+	<link rel="stylesheet" href="/Public/front/css/model.css">
+	<link rel="stylesheet" href="/Public/front/css/jquery.jcrop.min.css">
+	<script src="/Public/front/js/jquery.min.js"></script>
 	
 </head>
 <body>
@@ -21,17 +21,17 @@
 	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
-			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
-			<li><a href="/hzaubbs/index.php/Home/Index/forum">部落</a></li>
+			<li><a href="/index.php/Home/Index/index">大厅</a></li>
+			<li><a href="/index.php/Home/Index/forum">部落</a></li>
 			<li><a href="javascript:history.go(-1);">返回</a></li>
 			<li class="li-state douser"><a href="<?php echo ($nav["url"]); ?>" class="douser"><?php echo ($nav["state"]); ?> <?php echo ($nav["i"]); ?></a>
 				<div id="loged"> 
 					<span class="org_bot_cor"></span>
 					<span class="emem"></span>
 					<ul>
-						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
+						<li><a href="/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
+						<li><a href="/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>
@@ -84,17 +84,17 @@
 
 			<section class="content">
 				<header class="content-header">
-					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息</a>
+					<a href="/index.php/Home/Index/addtopic">发布消息</a>
 					<button class="choose-class" id="index-choose-xuan">悬赏贴</button>
 					<button class="choose-class" id="index-choose-narmal">一般贴</button>
 					<button class="choose-class" id="index-choose-all">所有</button>
 				</header>
 				<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><!-- start title 分块小主题区域 -->
 					<article class="content-topic <?php echo ($topic["class"]); ?>">
-						<img src="/hzaubbs/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
+						<img src="/Public/upload/head-img/<?php echo ($topic["img"]); ?>" alt="" class="head-img"/>
 						<section class="content-article">
 							<header class="title">
-								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><?php echo ($topic["topicname"]); ?></a>
+								<a href="/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><?php echo ($topic["topicname"]); ?></a>
 								<i class="topic-class"><?php echo ($topic["class"]); ?></i>
 							</header>
 							<div class="real-content">
@@ -135,12 +135,12 @@
 							$(this).parent().parent().parent().addClass("reward");
 						}
 						function zan(id){
-							$.post('/hzaubbs/index.php/Home/Index/zan',{
+							$.post('/index.php/Home/Index/zan',{
 								topicid:id
 							},function(zannum){
 								if(zannum=="游客"){
 									alert("请登录\n\n您当前是游客身份，不支持点赞和评论");
-									window.location.href="/hzaubbs/index.php/Home/Login/login";
+									window.location.href="/index.php/Home/Login/login";
 								}else{
 									if(zannum==$("#zanid"+id).html()){
 										alert("您已经点赞过此消息");

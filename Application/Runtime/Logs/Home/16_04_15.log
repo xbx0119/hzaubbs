@@ -1,0 +1,67 @@
+[ 2016-04-15T00:13:37+08:00 ] 220.181.108.112 /hzaubbs/index.php/Home/Index/topic?id=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-04-15T14:52:24+08:00 ] 51.254.121.188 /hzaubbs/index.php/Home/Index/topic?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002215s ]
+
+[ 2016-04-15T22:38:16+08:00 ] 220.249.99.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001956s ]
+
+[ 2016-04-15T22:38:20+08:00 ] 220.249.99.175 /index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-04-15T22:38:22+08:00 ] 220.249.99.175 /index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-04-15T22:38:34+08:00 ] 220.249.99.175 /index.php/Home/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `username` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `user` WHERE `email` = '1060031655@qq.com' AND `password` = '19970119' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-04-15T22:38:35+08:00 ] 220.249.99.175 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-04-15T22:38:37+08:00 ] 220.249.99.175 /index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-04-15T22:38:39+08:00 ] 220.249.99.175 /index.php/Home/Index/buluo?forumid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+
+[ 2016-04-15T22:38:41+08:00 ] 220.249.99.175 /index.php/Home/Index/addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+
+[ 2016-04-15T22:38:50+08:00 ] 220.249.99.175 /index.php/Home/Index/do_addtopic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-04-15T22:38:50+08:00 ] 220.249.99.175 /index.php/home/index/topic/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+

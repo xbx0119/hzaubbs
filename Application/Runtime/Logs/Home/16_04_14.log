@@ -1,0 +1,185 @@
+[ 2016-04-14T01:01:40+08:00 ] 212.83.177.193 /hzaubbs/index.php/home/Login/do_logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-04-14T01:01:42+08:00 ] 212.83.177.193 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+
+[ 2016-04-14T05:37:36+08:00 ] 220.181.108.181 /hzaubbs/index.php/Home/Index/topic?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-04-14T08:37:36+08:00 ] 220.181.108.141 /hzaubbs/index.php/Home/Index/topic?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+
+[ 2016-04-14T09:10:56+08:00 ] 123.125.71.30 /hzaubbs/index.php/Home/Index/topic?id=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-04-14T09:44:17+08:00 ] 220.181.108.140 /hzaubbs/index.php/Home/Index/topic?id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002092s ]
+
+[ 2016-04-14T14:47:49+08:00 ] 220.249.99.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002138s ]
+
+[ 2016-04-14T15:47:09+08:00 ] 62.210.148.247 /hzaubbs/index.php/Home/Index/topic?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-04-14T15:47:12+08:00 ] 62.210.148.247 /hzaubbs/index.php/Home/Index/topic?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-04-14T15:47:15+08:00 ] 62.210.148.247 /hzaubbs/index.php/Home/Index/topic?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-04-14T15:47:18+08:00 ] 62.210.148.247 /hzaubbs/index.php/Home/Login/do_logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-04-14T15:47:23+08:00 ] 62.210.148.247 /hzaubbs/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-04-14T15:47:26+08:00 ] 62.210.148.247 /hzaubbs/index.php/Home/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-04-14T16:12:18+08:00 ] 220.249.99.175 /index.php/Home/Index/topic?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+
+[ 2016-04-14T18:29:08+08:00 ] 220.249.99.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002435s ]
+
+[ 2016-04-14T18:29:23+08:00 ] 220.249.99.175 /index.php/Home/Index/topic?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+
+[ 2016-04-14T18:31:13+08:00 ] 183.60.52.5 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+
+[ 2016-04-14T18:31:14+08:00 ] 183.232.90.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-04-14T18:31:15+08:00 ] 163.177.94.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-04-14T18:32:26+08:00 ] 183.232.90.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-04-14T18:32:26+08:00 ] 163.177.69.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-04-14T18:32:26+08:00 ] 183.60.52.5 /index.php/Home/Index/topic?id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+
+[ 2016-04-14T18:32:26+08:00 ] 163.177.82.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-04-14T18:32:38+08:00 ] 183.60.52.5 /index.php/Home/Index/topic?id=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-04-14T18:39:09+08:00 ] 51.255.51.7 /hzaubbs/index.php/Home/Index/forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-04-14T18:39:12+08:00 ] 51.255.51.7 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-04-14T18:40:17+08:00 ] 123.125.71.70 /hzaubbs/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-04-14T19:04:05+08:00 ] 220.249.99.175 /index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-04-14T19:13:37+08:00 ] 220.181.108.100 /hzaubbs/index.php/Home/Index/topic?id=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+
+[ 2016-04-14T19:46:57+08:00 ] 220.181.108.155 /hzaubbs/index.php/Home/Index/topic?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+
+[ 2016-04-14T20:20:17+08:00 ] 123.125.71.52 /hzaubbs/index.php/Home/Index/topic?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+
+[ 2016-04-14T20:53:37+08:00 ] 220.181.108.177 /hzaubbs/index.php/Home/Index/topic?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-04-14T21:26:57+08:00 ] 123.125.71.30 /hzaubbs/index.php/Home/Index/topic?id=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-04-14T22:00:17+08:00 ] 123.125.71.75 /hzaubbs/index.php/Home/Index/topic?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-04-14T22:33:37+08:00 ] 123.125.71.113 /hzaubbs/index.php/Home/Index/topic?id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-04-14T23:06:57+08:00 ] 220.181.108.106 /hzaubbs/index.php/Home/Index/topic?id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-04-14T23:40:17+08:00 ] 220.181.108.89 /hzaubbs/index.php/Home/Index/topic?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
