@@ -7,11 +7,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>狮山讨论区</title>
-	<link rel="stylesheet" href="/Public/front/css/basic.css">
-	<link rel="stylesheet" href="/Public/front/css/main.css">
-	<!-- <link rel="stylesheet" href="/Public/front/css/topic.css"> -->
-	<link rel="stylesheet" href="/Public/front/css/person.css">
-	<script src="/Public/front/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
+	<!-- <link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css"> -->
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/person.css">
+	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -20,17 +20,17 @@
 	<h1>狮山讨论区</h1>
 	<nav id="top-nav">
 		<ul id="top-nav-ul">
-			<li><a href="/index.php/Home/Index/index">大厅</a></li>
-			<li><a href="/index.php/Home/Index/forum">部落</a></li>
+			<li><a href="/hzaubbs/index.php/Home/Index/index">大厅</a></li>
+			<li><a href="/hzaubbs/index.php/Home/Index/forum">部落</a></li>
 			<li><a href="javascript:history.go(-1);">返回</a></li>
 			<li class="li-state douser"><a href="<?php echo ($nav["url"]); ?>" class="douser"><?php echo ($nav["state"]); ?> <?php echo ($nav["i"]); ?></a>
 				<div id="loged"> 
 					<span class="org_bot_cor"></span>
 					<span class="emem"></span>
 					<ul>
-						<li><a href="/index.php/Home/Person/person">个人中心</a></li>
+						<li><a href="/hzaubbs/index.php/Home/Person/person">个人中心</a></li>
 						<li><a href="">系统通知</a></li>
-						<li><a href="/index.php/Home/Login/do_logout">退出登陆</a></li>
+						<li><a href="/hzaubbs/index.php/Home/Login/do_logout">退出登陆</a></li>
 					</ul>
 				</div>
 			</li>
@@ -77,16 +77,16 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="main-header">
-				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/hzaubbs/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
 				<h1>博勋</h1>
 			</section>
 			<section class="main-side">
 				<section class="main-side-second">
 					<h1>账号设置</h1>
 					<div class="side-content">
-						<span><a href="/index.php/Home/Person/edit">编辑资料</a></span>
+						<span><a href="/hzaubbs/index.php/Home/Person/edit">编辑资料</a></span>
 						<i>|</i>
-						<span><a href="/index.php/Home/Person/changepwd">修改密码</a></span>
+						<span><a href="/hzaubbs/index.php/Home/Person/changepwd">修改密码</a></span>
 						<!-- <span><a href="">其他其他</a></span>
 						<i>|</i>
 						<span><a href="">其他其他</a></span> -->
@@ -95,9 +95,9 @@
 				<section class="main-side-second">
 					<h1>部落信息</h1>
 					<div class="side-content">
-						<span><a href="/index.php/Home/Person/myforum">我的部落</a></span>
+						<span><a href="/hzaubbs/index.php/Home/Person/myforum">我的部落</a></span>
 						<i>|</i>
-						<span><a href="/index.php/Home/Person/createforum">创建部落</a></span>
+						<span><a href="/hzaubbs/index.php/Home/Person/createforum">创建部落</a></span>
 						<!-- <span><a href="">其他其他</a></span>
 						<i>|</i>
 						<span><a href="">其他其他</a></span> -->
@@ -119,7 +119,7 @@
 					<article class="main-container-news show-article">
 						<!-- 最近创建的话题 -->
 						<?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$topic): $mod = ($i % 2 );++$i;?><div class="main-container-topic">
-								<a href="/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><h1><?php echo ($topic["topicname"]); ?></h1><i>赞：<?php echo ($topic["zan"]); ?> ｜ 评：<?php echo ($topic["resnum"]); ?>｜<?php echo ($topic["time"]); ?></i></a>
+								<a href="/hzaubbs/index.php/Home/Index/topic?id=<?php echo ($topic["topicid"]); ?>"><h1><?php echo ($topic["topicname"]); ?></h1><i>赞：<?php echo ($topic["zan"]); ?> ｜ 评：<?php echo ($topic["resnum"]); ?>｜<?php echo ($topic["time"]); ?></i></a>
 							</div>
 							<hr class="hrhr"><?php endforeach; endif; else: echo "" ;endif; ?>	
 						<!-- <hr class="hrhr"> -->

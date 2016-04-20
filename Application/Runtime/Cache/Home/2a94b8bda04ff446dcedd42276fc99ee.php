@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<script src="/hzaubbs/Public/front/js/indexword.js"></script>
 	
 </head>
 <body>
@@ -78,6 +79,7 @@
 		<!-- 中间内容区 -->
 		<div id="main">
 			<section class="content">
+
 				<header class="content-header">
 					<a href="/hzaubbs/index.php/Home/Index/addtopic">发布消息</a>
 					<button class="choose-class" id="index-choose-xuan">悬赏贴</button>
@@ -137,8 +139,14 @@
 					<!-- end title --><?php endforeach; endif; else: echo "" ;endif; ?>
 				<footer class="content-footer"></footer>
 			</section>
-			<section class="information"  style="display:none;">
-				
+			<section class="information">
+				<h1>每日箴言</h1>
+				<article id="indexword">
+
+				</article>
+				<script>
+					$("#indexword").html(indexword);
+				</script>
 			</section>
 		</div>
 		<!-- 尾部 -->

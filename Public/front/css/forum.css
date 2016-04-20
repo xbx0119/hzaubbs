@@ -7,11 +7,13 @@
 	background:#FFFFFF;
 	box-shadow:0px 0px 2px #aaa;
 	border-radius:5px;
-	padding:30px;
+	padding-top:30px;
+	margin-top:75px;
 }
 div.left{
 	width:75%;
 	float:left;
+	margin-left:10px;
 	/*background:red;*/
 }
 section.content{
@@ -152,7 +154,7 @@ div.right{
 		float:left;
 		padding:0px;
 		padding-top:10px;
-		padding-left:5px;
+		margin-top:70px;
 	}
 	div.right{
 		display:none;
@@ -160,6 +162,7 @@ div.right{
 	div.left{
 		width:100%;
 		float:left;
+		margin-left:0px;
 		/*background:red;*/
 	}
 	section.content{
