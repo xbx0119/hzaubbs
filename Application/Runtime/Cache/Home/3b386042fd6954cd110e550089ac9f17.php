@@ -78,7 +78,9 @@
 		<div id="main">
 			<section class="main-header">
 				<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><img src="/hzaubbs/Public/upload/head-img/<?php echo ($user["img"]); ?>" alt="" class="head-img"/><?php endforeach; endif; else: echo "" ;endif; ?>
-				<h1>博勋</h1>
+				<div class="edit-header">
+				<h1>博勋 <i>个人中心</i> </h1>
+			</div>
 			</section>
 			<section class="main-side">
 				<section class="main-side-second">

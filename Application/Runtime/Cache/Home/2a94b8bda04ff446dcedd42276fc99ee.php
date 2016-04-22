@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/basic.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/model.css">
+	<link rel="stylesheet" href="/hzaubbs/Public/front/css/page.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/jquery.jcrop.min.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
 	<script src="/hzaubbs/Public/front/js/indexword.js"></script>
-	
 </head>
 <body>
 	<div id="wrapper">
@@ -110,9 +110,7 @@
 							<span><a href="javascript:;" onclick="pinlun();" class="dopinlun">评论</a><i id="zanid<?php echo ($topic["topicid"]); ?>" style="font-style:normal;"><?php echo ($topic["resnum"]); ?></i></span>
 							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
 						</section>
-
-						
-					</article>
+					</article><?php endforeach; endif; else: echo "" ;endif; ?>
 					<script>
 						if($(".topic-class").html()=="悬赏贴"){
 							$(this).parent().parent().parent().addClass("reward");
@@ -136,8 +134,11 @@
 						}
 						
 					</script>
-					<!-- end title --><?php endforeach; endif; else: echo "" ;endif; ?>
-				<footer class="content-footer"></footer>
+					<!-- end title -->
+				
+				<footer class="content-footer">
+					<div class="page-show"><?php echo ($page); ?></div>
+				</footer>
 			</section>
 			<section class="information">
 				<h1>每日箴言</h1>

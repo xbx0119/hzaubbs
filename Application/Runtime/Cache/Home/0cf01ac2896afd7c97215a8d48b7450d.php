@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/main.css">
 	<link rel="stylesheet" href="/hzaubbs/Public/front/css/topic.css">
 	<script src="/hzaubbs/Public/front/js/jquery.min.js"></script>
+	<script src="/hzaubbs/Public/front/js/indexword.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -95,7 +96,13 @@
 				<footer class="content-footer"></footer>
 			</section>
 			<section class="information">
-				
+				<h1>每日箴言</h1>
+				<article id="indexword">
+
+				</article>
+				<script>
+					$("#indexword").html(indexword);
+				</script>
 			</section>
 			<section class="talk-area">
 				<header class="content-header" style="box-shadow:0px 0px 0px #000;">评论

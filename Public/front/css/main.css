@@ -2,7 +2,6 @@
 	width:78%;
 	min-height:300px;
 	margin-left:11%;
-	margin-top:20px;
 	margin-bottom:20px;
 	/*box-shadow:0px 0px 2px #aaa;
 	border-radius:5px;*/
@@ -59,7 +58,7 @@
 	color:gold;
 }
 .content-footer{
-	height:40px;
+	height:50px;
 	box-shadow:0px -1px 1px #aaa;
 	clear:both;
 }
@@ -337,16 +336,17 @@
 		/*color:red;*/
 	}
 	.information{
-		/*width:23%;
-		min-height:300px;
-		margin-left:2%;
+		width:100%;
+		min-height:150px;
+		margin-left:0%;
+		margin-top:15px;
+		margin-bottom:0px;
 		float:left;
-		display:block;
 		border-radius:5px;
+		display:block;
 		box-shadow:0px 0px 2px #aaa;
 		border-radius:5px;
-		background:#FFFFFF;*/
-		display:none;
+		background:#FFFFFF;
 	}
 
 

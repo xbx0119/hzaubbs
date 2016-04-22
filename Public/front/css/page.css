@@ -1,0 +1,59 @@
+/*分页样式first（第一页）、prev（上一页）、next（下一页）、end（最后一页）、num（其他页的数字）、current（当前页）。*/
+.page-show{
+	/*height:28px;*/
+	text-align: center;
+}
+.num, .current, .end, .next, .prev, .first{
+	margin-top:8px;
+	width:50px;
+	height:35px;
+	display: inline-block;
+	line-height: 35px;
+	margin-left:5px;
+	text-align: center;
+	background: #138EB8;
+	color:#fff;
+	border-radius: 3px;
+}
+.current{
+	background: #09629C;
+	color:gold;
+	/*box-shadow: 0px 0px 2px red;*/
+}
+.next, .prev{
+	width:80px;
+}
+.first, .end{
+	width:60px;
+}
+
+@media screen and (max-width:600px){
+	.num, .current, .end, .next, .prev, .first{
+		margin-top:10px;
+		width:2em;
+		height:30px;
+		line-height: 30px;
+		margin-left:3px;
+		text-align: center;
+		border-radius: 3px;
+		font-size: 0.8em;
+	}
+	.current{
+		background: #09629C;
+		color:gold;
+		/*box-shadow: 0px 0px 2px red;*/
+	}
+	.next, .prev{
+		width:3.8em;
+		/*margin-left:2px;*/
+		margin-left:0px;
+		margin-right: 0px;
+		font-size: 0.7em;
+	}
+	.first, .end{
+		width:2.9em;
+		font-size: 0.7em;
+		margin-left:0px;
+		margin-right: 0px;
+	}
+}

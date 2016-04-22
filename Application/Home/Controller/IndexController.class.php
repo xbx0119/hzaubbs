@@ -14,8 +14,21 @@ class IndexController extends Controller {
         $con3=M('user');
         // $topic=$con->order('convert(class using gb2312) asc,topicID desc')->select();
         //不能按先显示悬赏再显示一般贴
-        $topic=$con->order('topicID desc')->select();
+        if(!isset($_GET['p'])){
+            $_GET['p']=1;
+        }
+        $topic=$con->order('topicID desc')->page($_GET['p'].',15')->select();  //每一页显示的记录数
+
+        $count = $con->count();// 查询满足要求的总记录数
+        // echo "<script>alert($count);</script>";
+        $Page = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数
+        $Page->setConfig('header','<span class="rows">共 %TOTAL_ROW% 条记录</span>');
+        $Page->setConfig('prev','上一页');
+        $Page->setConfig('next','下一页');
         
+        // $Page->setConfig('next','下一页');
+        $show = $Page->show();// 分页显示输出
+        $this->assign('page',$show);// 赋值分页输出
         //为悬赏贴css增加reward类
         $length=count($topic);
         for($i=0;$i<$length;$i++){

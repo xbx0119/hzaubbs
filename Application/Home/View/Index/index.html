@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="__PUBLIC__/front/css/basic.css">
 	<link rel="stylesheet" href="__PUBLIC__/front/css/main.css">
 	<link rel="stylesheet" href="__PUBLIC__/front/css/model.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/css/page.css">
 	<link rel="stylesheet" href="__PUBLIC__/front/css/jquery.jcrop.min.css">
 	<script src="__PUBLIC__/front/js/jquery.min.js"></script>
 	<script src="__PUBLIC__/front/js/indexword.js"></script>
-	
 </head>
 <body>
 	<div id="wrapper">
@@ -54,9 +54,8 @@
 							<span><a href="javascript:;" onclick="pinlun();" class="dopinlun">评论</a><i id="zanid{$topic.topicid}" style="font-style:normal;">{$topic.resnum}</i></span>
 							<!-- <span><a href="javascript:;" onclick="zan();">回复</a>26</span> -->
 						</section>
-
-						
 					</article>
+				</volist>
 					<script>
 						if($(".topic-class").html()=="悬赏贴"){
 							$(this).parent().parent().parent().addClass("reward");
@@ -81,8 +80,10 @@
 						
 					</script>
 					<!-- end title -->
-				</volist>
-				<footer class="content-footer"></footer>
+				
+				<footer class="content-footer">
+					<div class="page-show">{$page}</div>
+				</footer>
 			</section>
 			<section class="information">
 				<h1>每日箴言</h1>
