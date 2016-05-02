@@ -90,6 +90,7 @@ class LoginController extends Controller {
         $data['sex']=$_POST['sex'];
         $data['email']=$_POST['email'];
         $data['qq']=$_POST['qq'];
+        $data['img']="noimg.jpg";
         $result=$con->data($data)->add();
         if($result){
             // cookie('username',$data['username']);  //设置cookie
